@@ -4,11 +4,21 @@ import doubleDiamond from '../images/memento/double_diamond.png';
 import triangulation from '../images/memento/triangulation.png';
 
 import IconText from '../components/IconText.js'
+import UncontrolledExample from '../components/CustomCarousel.js';
+import CustomCarousel from '../components/CustomCarousel.js';
+// import { Carousel } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
 
 function Memento() {
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top of the screen when component mounts
       }, []);
+
+    const personaImages = [
+        doubleDiamond,
+        doubleDiamond,
+        doubleDiamond,
+    ];
     
     return (
         <div>
@@ -54,7 +64,7 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             </section>
             <section class = "project-section">
                 <div class = "centered-image-container">
-                    <img class = "double-diamond" src = {doubleDiamond}></img>
+                    <img class = "centered-image" src = {doubleDiamond}></img>
                 </div>
             </section>
 
@@ -79,12 +89,15 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
 
             <section class = "project-section">
                 <h2>With these goals in mind, we began Primary Research, using a triangulation approach that balance the weaknesses between each research method.</h2>
-                <img src={triangulation} alt="" class = "double-diamond"></img>
+                <div class="centered-image-container">
+                    <img src={triangulation} alt="" class = "centered-image"></img>
+                </div>
+                
             </section>
 
             <section class = "project-section">
                 <h4>With all the data we collated, we synthesised it using Affinity Mapping.</h4>
-                <img src={triangulation} alt="" class = "double-diamond"></img>
+                <img src={triangulation} alt="" class = "centered-image"></img>
             </section>
 
             <section class = "project-section">
@@ -134,31 +147,125 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                 <h2>Our synthesis of the data</h2>
                 <h4>To gain a better understanding of our user base, we utilised a data sheet to group interviewees, which acted as a structure to the personas we developed as we derived characteristics from the clumps.</h4>
             </section>
+            
             <section class = "project-section">
-                <div class = "persona-container">
-                    <img src = "https://source.unsplash.com/250x250"></img>
-                    <h4>Mary is known as the life of the party, thriving in social settings.
-                        Enjoys parties with laughter, lights, and music but experiences self-doubt the next morning.
-                        Her anxiety eases after discussing her experiences during a coffee chat.
-                        Mary's extroverted and reflective personality drives her dependence on others for post-event recovery.</h4>
-                </div>
+                <CustomCarousel images={personaImages}/>
             </section>
+
             <section class = "project-section">
-                <h4>Created Storyboards</h4>
-                <img src = "https://source.unsplash.com/200x200"></img>
+                <h4>And developed a range of user journey maps and storyboards, to see how users were really feeling.</h4>
+                <CustomCarousel images={personaImages}/>
             </section>
+
             <section class = "project-section">
                 <h2>Concept Development</h2>
-                <h3>Ideation</h3>
-                <h3>Idea Refinement</h3>
+                <h4>With each of us focusing in a particular persona, we employed the use of three ideation methods to individually generate multiple concepts.</h4>
+                <CustomCarousel images={personaImages}/>
             </section>
+
+            <section class = "project-section">
+                <h4>With each idea viewing Post-Party effects from such different perspectives, we used a decision matrix to assess each idea.</h4>
+                <h4>We found that: Memory + Great for preserving memories and providing real-time spontaneous interactions. 
+                - Struggles with demand and engagement as scrapbooking is niche.Stash
+                + An interactive parallax story was a great and unique way to recall events.
+                - However restricting access to photos and videos after an event can be anxiety inducing which goes against the issue our application was trying to solve.
+                Museum
+                + Centralise media from all the events a person has attended.
+                - Lacked creative autonomy, as the options of personalisation were quite restricting</h4>
+                <img src={triangulation} alt="" class = "centered-image"></img>
+            </section>
+
+            <section class = "project-section">
+                <h2>Memento Development Plan</h2>
+                <div class = "centered-image-container">
+                    <img src = "https://source.unsplash.com/200x200"></img>
+                </div>
+            </section>
+
             <section class = "project-section">
                 <h2>Wireframes</h2>
-                <img src = "https://source.unsplash.com/200x200"></img>
+                <h4>With all our features established, we laid out how they would be translated to a screen setting using wireframes. This would provide a base layout, with usability and ethical considerations being the main focus of this phase.</h4>
+                <CustomCarousel images={personaImages}/>
             </section>
+
+            <section class = "project-section">
+                <h2>Mid-Fi Prototypes</h2>
+                <h4>After gathering informal peer feedback, we began to further refine our designs. Giving the prototypes basic functionality as well as clarifying critical information.</h4>
+                <CustomCarousel images={personaImages}/>
+            </section>
+
+            <section class = "project-section">
+                <h2>User Testing Round 1</h2>
+                <h4>The first round of user testing, was completed utilising an iteractive process</h4>
+                <div>
+                    <IconText
+                        img = "https://source.unsplash.com/100x100"
+                        title = "Think Alouds"
+                        description = "Was first conducted on 5 general users to identify any glaring usability issues. Easily adjustable issues were addressed within this phase"
+                    />
+                    <IconText
+                        img = "https://source.unsplash.com/100x100"
+                        title = "Cognitive Walkthroughs"
+                        description = "Conducted on 10 experts to identify"
+                    />
+                    <IconText
+                        img = "https://source.unsplash.com/100x100"
+                        title = "System Usability Scale (SUS) Survey"
+                        description = "Conducted on all 15 participants, to highlight"
+                    />
+                </div>
+                <h4>By doing it this way, we ensured that the glaring issues wouldn’t be repeated within the Cognitive Walkthroughs, while also gathering a broad range of perspectives.</h4>
+            </section>
+
+            <section class = "project-section">
+                <h4>and then collated our findings</h4>
+            </section>
+
             <section class = "project-section">
                 <h2>Hi-Fi Prototypes</h2>
-                <img src = "https://source.unsplash.com/200x200"></img>
+                <CustomCarousel images={personaImages}/>
+            </section>
+
+            <section class = "project-section">
+                <h2>Refinements made from Mid-Fi</h2>
+                <div>
+                    <h4>Onboarding Tutorial</h4>
+                    <h4>As shown by our SUS results users had difficulty in identifying icons in the create menu, highlighting a need for “Technical Support”.To remedy this, we implemented an onboarding tutorial when first using the app, to clarify any confusion.</h4>
+                </div>
+                <div>
+                    <h4>More Personalisation</h4>
+                    <h4>Experts identified a lack of personalisation options for their event pages. So we integrated adjustable text colours, background textures and added more font options.</h4>
+                </div>
+            </section>
+
+            <section class = "project-section">
+                <h2>Design Overhaul</h2>
+                <h4>Prior to integrating interactivity into the project, additional Think-Aloud testing revealed that the branding miscommunicated the purpose of the application. With our colour themes conveying an "Outdated Grandma Feel" as opposed to our targetted young demographic, our team decided to completely rework Memento's branding.</h4>
+                <h4>Originally, the colour palette aimed to convey optimism and warmth through tones of orange and dark green</h4>
+                <h4>The new theme, incorporated a high-contrast white and black colour scheme with accents of bright blue and green to play into an early 2000's aesthetic. All headings in the application were now lowercase, as well as an increase in emoji use to provide a more casual tone.</h4>
+            </section>
+
+            <section class = "project-section">
+                <h2>Second Round of User Testing</h2>
+                <h4>With our interactive mockup, we conducted </h4>
+                <IconText
+                    img = "https://source.unsplash.com/100x100"
+                    title = "Think Alouds + System Usability Scale (SUS)"
+                    description = "Conducted on general users to identify any glaring issues"
+                />
+                <IconText
+                    img = "https://source.unsplash.com/100x100"
+                    title = "Think Alouds + System Usability Scale (SUS)"
+                    description = "Conducted on general users to identify any glaring issues"
+                />
+            </section>
+            
+            <section class = "project-section">
+                <h2>Meet Memento</h2>
+            </section>
+
+            <section class = "project-section">
+                <h2>Learnings</h2>
             </section>
         </div>
     );

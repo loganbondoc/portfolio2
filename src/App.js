@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import React from 'react';
-import './scss/main.scss';
 import Nav from "./components/Nav.js"
 import CurrentWorks from "./components/CurrentWorks.js"
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Memento from "./pages/Memento.js"
 import Home from "./pages/Home.js"
+
 
 
 function ScrollToTop() {
