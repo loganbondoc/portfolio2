@@ -4,7 +4,7 @@ import Work from './Work.js';
 function CurrentWorks() {
   
     return (
-      <div className="CurrentWorks">
+      <div id="CurrentWorks">
         <h2>UX/UI Design Case Studies</h2>
         <span className="work-container">
           <Work
