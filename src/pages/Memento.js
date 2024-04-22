@@ -2,12 +2,19 @@ import React, { useEffect } from 'react';
 import mementoBanner from '../images/memento/memento_banner.png';
 import doubleDiamond from '../images/memento/double_diamond.png';
 import triangulation from '../images/memento/triangulation.png';
+import sus from '../images/memento/sus.png';
+import thinkAloud from '../images/memento/think-aloud.png';
+import cognitiveWalkthrough from '../images/memento/cognitive-walkthrough.png';
+import memory from '../images/memento/memory.png';
+import stash from '../images/memento/stash.png';
+import museum from '../images/memento/museum.png';
 
 import IconText from '../components/IconText.js'
 import UncontrolledExample from '../components/CustomCarousel.js';
 import CustomCarousel from '../components/CustomCarousel.js';
 // import { Carousel } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
+import CustomZoom from '../components/CustomZoom.js';
 
 function Memento() {
     useEffect(() => {
@@ -18,6 +25,12 @@ function Memento() {
         doubleDiamond,
         doubleDiamond,
         doubleDiamond,
+    ];
+
+    const ideaImages = [
+        stash,
+        memory,
+        museum,
     ];
     
     return (
@@ -160,7 +173,7 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             <section class = "project-section">
                 <h2>Concept Development</h2>
                 <h4>With each of us focusing in a particular persona, we employed the use of three ideation methods to individually generate multiple concepts.</h4>
-                <CustomCarousel images={personaImages}/>
+                <CustomCarousel images={ideaImages}/>
             </section>
 
             <section class = "project-section">
@@ -198,21 +211,30 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                 <h2>User Testing Round 1</h2>
                 <h4>The first round of user testing, was completed utilising an iteractive process</h4>
                 <div>
-                    <IconText
-                        img = "https://source.unsplash.com/100x100"
-                        title = "Think Alouds"
-                        description = "Was first conducted on 5 general users to identify any glaring usability issues. Easily adjustable issues were addressed within this phase"
-                    />
-                    <IconText
-                        img = "https://source.unsplash.com/100x100"
-                        title = "Cognitive Walkthroughs"
-                        description = "Conducted on 10 experts to identify"
-                    />
-                    <IconText
-                        img = "https://source.unsplash.com/100x100"
-                        title = "System Usability Scale (SUS) Survey"
-                        description = "Conducted on all 15 participants, to highlight"
-                    />
+                    <div class = "top-bottom-container">
+                        <CustomZoom
+                            img = {thinkAloud}
+                            alt = ""
+                        />
+                        <h4>Think Alouds</h4>
+                        <h4>Was first conducted on 5 general users to identify any glaring usability issues. Easily adjustable issues were addressed within this phase</h4>
+                    </div>
+                    <div class = "top-bottom-container">
+                        <CustomZoom
+                            img = {cognitiveWalkthrough}
+                            alt = ""
+                        />
+                        <h4>Cognitive Walkthroughs</h4>
+                        <h4>Conducted on 10 experts to identify</h4>
+                    </div>
+                    <div class = "top-bottom-container">
+                        <CustomZoom
+                            img = {sus}
+                            alt = ""
+                        />
+                        <h4>System Usability Scale (SUS)</h4>
+                        <h4>Conducted on all 15 participants, to highlight</h4>
+                    </div>
                 </div>
                 <h4>By doing it this way, we ensured that the glaring issues wouldn’t be repeated within the Cognitive Walkthroughs, while also gathering a broad range of perspectives.</h4>
             </section>
