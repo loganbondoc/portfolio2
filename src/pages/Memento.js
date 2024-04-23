@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+
+// Images
 import mementoBanner from '../images/memento/memento_banner.png';
 import doubleDiamond from '../images/memento/double_diamond.png';
 import triangulation from '../images/memento/triangulation.png';
@@ -8,9 +10,32 @@ import cognitiveWalkthrough from '../images/memento/cognitive-walkthrough.png';
 import memory from '../images/memento/memory.png';
 import stash from '../images/memento/stash.png';
 import museum from '../images/memento/museum.png';
+import researchAffinity from '../images/memento/research_affinity.png';
+import datasheet from '../images/memento/datasheet.png';
+import chris from '../images/memento/chris.png';
+import mary from '../images/memento/mary.png';
+import tanya from '../images/memento/tanya.png';
+import chrisMap from '../images/memento/chris_map.png';
+import chrisStory from '../images/memento/chris_storyboard.png';
+import maryStory from '../images/memento/mary_storyboard.png';
+import tanyaStory from '../images/memento/tanya_storyboard.png';
+import wireframe1 from '../images/memento/wireframe_1.png';
+import wireframe2 from '../images/memento/wireframe_2.png';
+import wireframe3 from '../images/memento/wireframe_3.png';
+import wireframe4 from '../images/memento/wireframe_4.png';
+import midfi1 from '../images/memento/midfi_1.png';
+import midfi2 from '../images/memento/midfi_2.png';
+import midfi3 from '../images/memento/midfi_3.png';
+import midfi4 from '../images/memento/midfi_4.png';
+import hifi1 from '../images/memento/hifi_1.png';
+import hifi2 from '../images/memento/hifi_2.png';
+import hifi3 from '../images/memento/hifi_3.png';
+import hifi4 from '../images/memento/hifi_4.png';
+import devDiagram from '../images/memento/dev_diagram.png'
 
+
+// Components
 import IconText from '../components/IconText.js'
-import UncontrolledExample from '../components/CustomCarousel.js';
 import CustomCarousel from '../components/CustomCarousel.js';
 // import { Carousel } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
@@ -22,9 +47,9 @@ function Memento() {
       }, []);
 
     const personaImages = [
-        doubleDiamond,
-        doubleDiamond,
-        doubleDiamond,
+        chris,
+        mary,
+        tanya,
     ];
 
     const ideaImages = [
@@ -32,6 +57,33 @@ function Memento() {
         memory,
         museum,
     ];
+
+    const storyImages =[
+        chrisStory,
+        maryStory,
+        tanyaStory,
+    ]
+
+    const wireframeImages = [
+        wireframe1,
+        wireframe2,
+        wireframe3,
+        wireframe4,
+    ]
+
+    const midfiImages = [
+        midfi1,
+        midfi2,
+        midfi3,
+        midfi4,
+    ]
+
+    const hifiImages = [
+        hifi1,
+        hifi2,
+        hifi3,
+        hifi4,
+    ]
     
     return (
         <div>
@@ -109,8 +161,11 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             </section>
 
             <section class = "project-section">
-                <h4>With all the data we collated, we synthesised it using Affinity Mapping.</h4>
-                <img src={triangulation} alt="" class = "centered-image"></img>
+                <h4>With all the data we collated, we grouped our findings using Affinity Mapping.</h4>
+                <CustomZoom
+                    img = {researchAffinity}
+                    alt = ""
+                />
             </section>
 
             <section class = "project-section">
@@ -159,6 +214,10 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             <section class = "project-section">
                 <h2>Our synthesis of the data</h2>
                 <h4>To gain a better understanding of our user base, we utilised a data sheet to group interviewees, which acted as a structure to the personas we developed as we derived characteristics from the clumps.</h4>
+                <CustomZoom
+                    img={datasheet}
+                    alt=""
+                />
             </section>
             
             <section class = "project-section">
@@ -167,7 +226,11 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
 
             <section class = "project-section">
                 <h4>And developed a range of user journey maps and storyboards, to see how users were really feeling.</h4>
-                <CustomCarousel images={personaImages}/>
+                <CustomZoom
+                    img = {chrisMap}
+                    alt = ""
+                />
+                <CustomCarousel images={storyImages}/>
             </section>
 
             <section class = "project-section">
@@ -189,22 +252,21 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             </section>
 
             <section class = "project-section">
-                <h2>Memento Development Plan</h2>
                 <div class = "centered-image-container">
-                    <img src = "https://source.unsplash.com/200x200"></img>
+                    <img src = {devDiagram}></img>
                 </div>
             </section>
 
             <section class = "project-section">
                 <h2>Wireframes</h2>
                 <h4>With all our features established, we laid out how they would be translated to a screen setting using wireframes. This would provide a base layout, with usability and ethical considerations being the main focus of this phase.</h4>
-                <CustomCarousel images={personaImages}/>
+                <CustomCarousel images={wireframeImages}/>
             </section>
 
             <section class = "project-section">
                 <h2>Mid-Fi Prototypes</h2>
                 <h4>After gathering informal peer feedback, we began to further refine our designs. Giving the prototypes basic functionality as well as clarifying critical information.</h4>
-                <CustomCarousel images={personaImages}/>
+                <CustomCarousel images={midfiImages}/>
             </section>
 
             <section class = "project-section">
@@ -245,7 +307,8 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
 
             <section class = "project-section">
                 <h2>Hi-Fi Prototypes</h2>
-                <CustomCarousel images={personaImages}/>
+                <h4>Used a calming orange and highlights of green to instill a</h4>
+                <CustomCarousel images={hifiImages}/>
             </section>
 
             <section class = "project-section">
