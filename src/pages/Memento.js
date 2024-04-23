@@ -32,7 +32,8 @@ import hifi2 from '../images/memento/hifi_2.png';
 import hifi3 from '../images/memento/hifi_3.png';
 import hifi4 from '../images/memento/hifi_4.png';
 import devDiagram from '../images/memento/dev_diagram.png'
-
+import usabilityTable1 from '../images/memento/usabilitytable1.png'
+import testingAffinity from '../images/memento/testing_affinity.png';
 
 // Components
 import IconText from '../components/IconText.js'
@@ -302,7 +303,23 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             </section>
 
             <section class = "project-section">
-                <h4>and then collated our findings</h4>
+                <h4>and then we collated our findings</h4>
+                <div>
+                    <h4>Affinity Mapping</h4>
+                    <h4>Categorise usability issues under specific usability goals</h4>
+                    <CustomZoom
+                        img = {testingAffinity}
+                        alt = ""
+                    />
+                </div>
+                <div>
+                    <h4>Usability insights table</h4>
+                    <h4>Used to prioritise specific tasks</h4>
+                    <CustomZoom
+                        img = {usabilityTable1}
+                        alt = ""
+                    />
+                </div>
             </section>
 
             <section class = "project-section">
