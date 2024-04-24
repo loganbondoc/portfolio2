@@ -34,6 +34,16 @@ import hifi4 from '../images/memento/hifi_4.png';
 import devDiagram from '../images/memento/dev_diagram.png'
 import usabilityTable1 from '../images/memento/usabilitytable1.png'
 import testingAffinity from '../images/memento/testing_affinity.png';
+import onboarding from '../images/memento/onboarding.png';
+import customisation from '../images/memento/customisation.png';
+
+import preservationIcon from '../images/memento/preservation_icon.png';
+import reconnectionIcon from '../images/memento/reconnection_icon.png';
+import recoveryIcon from '../images/memento/recovery_icon.png';
+import societalIcon from '../images/memento/societal_icon.png';
+import routineIcon from '../images/memento/routine_icon.png';
+import mementoDiagram from '../images/memento/memento_diagram.png';
+import transformation from '../images/memento/transformation.png';
 
 // Components
 import IconText from '../components/IconText.js'
@@ -180,32 +190,27 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                 <h4>We found that:</h4>
                 <div>
                     <IconText 
-                        img = "https://source.unsplash.com/100x100"
+                        img = {societalIcon}
                         title = "Societal pressure"
                         description = "There is an expectation to sustain productivity, maintain appearances and update others on activity whilst experiencing post-event emotions."
                     />
                     <IconText 
-                        img = "https://source.unsplash.com/100x100"
+                        img = {routineIcon}
                         title = "Returning to routine"
                         description = "Experiencing a highly anticipated, fun and active event following a sudden shift back into a normal routine can lead to individuals feeling discontentment and losing their sense of purpose"
                     />
                     <IconText 
-                        img = "https://source.unsplash.com/100x100"
+                        img = {recoveryIcon}
                         title = "Individual Recovery"
                         description = "Individuals resort to a balance of solitary outlets productive routines that assist in overcoming their negative post-event emotions."
                     />
                     <IconText 
-                        img = "https://source.unsplash.com/100x100"
+                        img = {reconnectionIcon}
                         title = "Social Reconnection"
                         description = "Human interaction is vital during the post-event phase. Young people connect with each other through storytelling and expression, countering feelings of isolation and disconnection."
                     />
                     <IconText 
-                        img = "https://source.unsplash.com/100x100"
-                        title = "Societal pressure"
-                        description = "There is an expectation to sustain productivity, maintain appearances and update others on activity whilst experiencing post-event emotions."
-                    />
-                    <IconText 
-                        img = "https://source.unsplash.com/100x100"
+                        img = {preservationIcon}
                         title = "Memory Preservation"
                         description = "Preserving the memories of an event can reduce the abrupt “morning-after” emotions of anxiety. Examples of this include revisiting photos, listening to the same music or replicating the setting to keep the memory alive."
                     />
@@ -241,15 +246,10 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             </section>
 
             <section class = "project-section">
-                <h4>With each idea viewing Post-Party effects from such different perspectives, we used a decision matrix to assess each idea.</h4>
-                <h4>We found that: Memory + Great for preserving memories and providing real-time spontaneous interactions. 
-                - Struggles with demand and engagement as scrapbooking is niche.Stash
-                + An interactive parallax story was a great and unique way to recall events.
-                - However restricting access to photos and videos after an event can be anxiety inducing which goes against the issue our application was trying to solve.
-                Museum
-                + Centralise media from all the events a person has attended.
-                - Lacked creative autonomy, as the options of personalisation were quite restricting</h4>
-                <img src={triangulation} alt="" class = "centered-image"></img>
+                <h4>With each idea viewing Post-Party effects from such different perspectives, we used a decision matrix to assess each idea and extracted features to create our new concept Memento.
+                    Memento supports users throughout the entire event process
+                </h4>
+                <img src={mementoDiagram} alt="" class = "centered-image"></img>
             </section>
 
             <section class = "project-section">
@@ -333,10 +333,18 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                 <div>
                     <h4>Onboarding Tutorial</h4>
                     <h4>As shown by our SUS results users had difficulty in identifying icons in the create menu, highlighting a need for “Technical Support”.To remedy this, we implemented an onboarding tutorial when first using the app, to clarify any confusion.</h4>
+                    <CustomZoom
+                        img={onboarding}
+                        alt=""
+                    />
                 </div>
                 <div>
                     <h4>More Personalisation</h4>
                     <h4>Experts identified a lack of personalisation options for their event pages. So we integrated adjustable text colours, background textures and added more font options.</h4>
+                    <CustomZoom
+                        img={customisation}
+                        alt=""
+                    />
                 </div>
             </section>
 
@@ -345,21 +353,55 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                 <h4>Prior to integrating interactivity into the project, additional Think-Aloud testing revealed that the branding miscommunicated the purpose of the application. With our colour themes conveying an "Outdated Grandma Feel" as opposed to our targetted young demographic, our team decided to completely rework Memento's branding.</h4>
                 <h4>Originally, the colour palette aimed to convey optimism and warmth through tones of orange and dark green</h4>
                 <h4>The new theme, incorporated a high-contrast white and black colour scheme with accents of bright blue and green to play into an early 2000's aesthetic. All headings in the application were now lowercase, as well as an increase in emoji use to provide a more casual tone.</h4>
+                <div class = "centered-image-container">
+                    <CustomZoom
+                        img = {transformation}
+                        alt = ""
+                    />
+                </div>
             </section>
 
             <section class = "project-section">
                 <h2>Second Round of User Testing</h2>
-                <h4>With our interactive mockup, we conducted </h4>
-                <IconText
-                    img = "https://source.unsplash.com/100x100"
-                    title = "Think Alouds + System Usability Scale (SUS)"
-                    description = "Conducted on general users to identify any glaring issues"
-                />
-                <IconText
-                    img = "https://source.unsplash.com/100x100"
-                    title = "Think Alouds + System Usability Scale (SUS)"
-                    description = "Conducted on general users to identify any glaring issues"
-                />
+                <h4>With our interactive mockup, we conducted testing on experts using Heuristic Evaluations and tested with general users with Think Aloud tasks.</h4>
+                <div>
+                    <div class = "top-bottom-container">
+                        <CustomZoom
+                            img = {thinkAloud}
+                            alt = ""
+                        />
+                        <h4>Heuristic Evaluations</h4>
+                        <h4>Was first conducted on 5 general users to identify any glaring usability issues. Easily adjustable issues were addressed within this phase</h4>
+                    </div>
+                    <div class = "top-bottom-container">
+                        <CustomZoom
+                            img = {cognitiveWalkthrough}
+                            alt = ""
+                        />
+                        <h4>Loop 11 Walkthroughs</h4>
+                        <h4>Conducted on 10 experts to identify</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "project-section">
+                <h2>More iterations</h2>
+                <div>
+                    <h4>Onboarding Tutorial</h4>
+                    <h4>As shown by our SUS results users had difficulty in identifying icons in the create menu, highlighting a need for “Technical Support”.To remedy this, we implemented an onboarding tutorial when first using the app, to clarify any confusion.</h4>
+                    <CustomZoom
+                        img={onboarding}
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <h4>More Personalisation</h4>
+                    <h4>Experts identified a lack of personalisation options for their event pages. So we integrated adjustable text colours, background textures and added more font options.</h4>
+                    <CustomZoom
+                        img={customisation}
+                        alt=""
+                    />
+                </div>
             </section>
             
             <section class = "project-section">
