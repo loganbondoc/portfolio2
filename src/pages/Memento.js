@@ -36,6 +36,7 @@ import usabilityTable1 from '../images/memento/usabilitytable1.png'
 import testingAffinity from '../images/memento/testing_affinity.png';
 import onboarding from '../images/memento/onboarding.png';
 import customisation from '../images/memento/customisation.png';
+import latch from '../images/memento/latch.png';
 
 import preservationIcon from '../images/memento/preservation_icon.png';
 import reconnectionIcon from '../images/memento/reconnection_icon.png';
@@ -272,7 +273,7 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
 
             <section class = "project-section">
                 <h2>User Testing Round 1</h2>
-                <h4>The first round of user testing, was completed utilising an iteractive process</h4>
+                <h4>The first round of user testing, was completed utilising an iterative process. By making small adjustments between testing methods, we ensured that the glaring issues wouldn’t be repeated by subsequent participants</h4>
                 <div>
                     <div class = "top-bottom-container">
                         <CustomZoom
@@ -288,7 +289,7 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                             alt = ""
                         />
                         <h4>Cognitive Walkthroughs</h4>
-                        <h4>Conducted on 10 experts to identify</h4>
+                        <h4>Conducted on 10 experts to identify issues from a more critical and design-centered perspective.</h4>
                     </div>
                     <div class = "top-bottom-container">
                         <CustomZoom
@@ -296,10 +297,9 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                             alt = ""
                         />
                         <h4>System Usability Scale (SUS)</h4>
-                        <h4>Conducted on all 15 participants, to highlight</h4>
+                        <h4>Conducted on all 15 participants, to highlight usability concerns on a quantitative scale</h4>
                     </div>
                 </div>
-                <h4>By doing it this way, we ensured that the glaring issues wouldn’t be repeated within the Cognitive Walkthroughs, while also gathering a broad range of perspectives.</h4>
             </section>
 
             <section class = "project-section">
@@ -386,26 +386,26 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
 
             <section class = "project-section">
                 <h2>More iterations</h2>
+                <h4>Through the extensive testing conducted on our interactive prototype, we had made 18 changes, big and small, to Memento. The most notable however was users who struggled to navigate a clustered event page:</h4>
                 <div>
-                    <h4>Onboarding Tutorial</h4>
-                    <h4>As shown by our SUS results users had difficulty in identifying icons in the create menu, highlighting a need for “Technical Support”.To remedy this, we implemented an onboarding tutorial when first using the app, to clarify any confusion.</h4>
-                    <CustomZoom
-                        img={onboarding}
-                        alt=""
-                    />
-                </div>
-                <div>
-                    <h4>More Personalisation</h4>
-                    <h4>Experts identified a lack of personalisation options for their event pages. So we integrated adjustable text colours, background textures and added more font options.</h4>
-                    <CustomZoom
-                        img={customisation}
-                        alt=""
-                    />
+                    <div>
+                        <h4>Latch Principle</h4>
+                        <h4>
+                            To address this, we utilised the LATCH Principle, which organises sorts data by either: Location, Alphabet, Time, Category and Heirachy. Hence, we implemented it through the a new sorting and filter dropdown, which allowed users to sort memos by time and filter by category of the memo (ie. notes, polls, links).
+                        </h4>
+                    </div>
+                    <div>
+                        <CustomZoom
+                            img={latch}
+                            alt=""
+                        />
+                    </div>
                 </div>
             </section>
             
             <section class = "project-section">
                 <h2>Meet Memento</h2>
+                <h4> Why just reminisce about events when can relive them, prolong them and anticipate future ones?</h4>
             </section>
 
             <section class = "project-section">
