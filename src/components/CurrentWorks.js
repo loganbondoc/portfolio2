@@ -13,12 +13,12 @@ function CurrentWorks() {
             description="Addressing Post Party Blues"
             image="https://source.unsplash.com/100x100"
           />
-          <Work
+          {/* <Work
             id="athlog"
             title="Athlog"
             description="Tracking your athletic progress"
             image="https://source.unsplash.com/100x100"
-          />
+          /> */}
           <Work
             id="portfolio"
             title="Portfolio"

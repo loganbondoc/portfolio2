@@ -5,8 +5,8 @@ import CurrentWorks from "./components/CurrentWorks.js"
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Memento from "./pages/Memento.js"
 import Home from "./pages/Home.js"
-
-
+import Portfolio from "./pages/Portfolio.js"
+import Resume from "./pages/Resume.js"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -32,6 +32,8 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/memento" element={<Memento />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </div>
     </BrowserRouter>
