@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Work from './Work.js';
+import mementoImg from '../images/memento_work.png';
+import portfolioImg from '../images/portfolio_work.png';
 
 function CurrentWorks() {
   
@@ -11,7 +13,7 @@ function CurrentWorks() {
             id="memento"
             title="Memento"
             description="Addressing Post Party Blues"
-            image="https://source.unsplash.com/100x100"
+            image={mementoImg}
           />
           {/* <Work
             id="athlog"
@@ -22,8 +24,8 @@ function CurrentWorks() {
           <Work
             id="portfolio"
             title="Portfolio"
-            description="A case study... FOR THE WEBSITE YOU'RE ON???"
-            image="https://source.unsplash.com/100x100"
+            description="A case study... for this website?"
+            image={portfolioImg}
           />
           {/* Add more Work components for other "past-works" */}
         </span>

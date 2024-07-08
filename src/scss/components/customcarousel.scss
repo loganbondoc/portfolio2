@@ -1,0 +1,52 @@
+.carousel-div {
+    max-width: 50vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 62px;
+    // display: flex;
+    // flex-direction:row;
+    // justify-content:center;
+    // align-items:center;
+    img {
+        border-radius: 62px;
+    }
+}
+
+/* Style the carousel */
+.custom-carousel .carousel {
+    position: relative; /* Ensure relative positioning for absolute positioning of arrows */
+  }
+  
+  /* Style the left and right arrows */
+  .custom-carousel .carousel-control-prev,
+  .custom-carousel .carousel-control-next {
+    width: 50px; /* Adjust width as needed */
+    height: 100%; /* Ensure full height */
+    top: 0; /* Align vertically centered */
+    background-color: transparent; /* Set background color */
+    border: none; /* Remove default border */
+  }
+  
+  /* Position the left arrow */
+  .custom-carousel .carousel-control-prev {
+    left: -50px; /* Adjust distance from the left */
+  }
+  
+  /* Position the right arrow */
+  .custom-carousel .carousel-control-next {
+    right: -50px; /* Adjust distance from the right */
+  }
+  
+  /* Style the arrow icons */
+  .custom-carousel .carousel-control-prev-icon,
+  .custom-carousel .carousel-control-next-icon {
+    background-color: transparent; /* Set background color */
+    background-size: contain; /* Ensure proper sizing */
+    border: none; /* Remove default border */
+  }
+  
+  /* Optionally, change the color or size of the arrow icons */
+  .custom-carousel .carousel-control-prev-icon::before,
+  .custom-carousel .carousel-control-next-icon::before {
+    color: #000; /* Change arrow color */
+    font-size: 24px; /* Change arrow size */
+  }

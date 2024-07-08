@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# files over 100mb
+/src/images/portfolio/portfolio_FINAL_1.gif

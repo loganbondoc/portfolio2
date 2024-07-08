@@ -5,7 +5,7 @@ import 'react-medium-image-zoom/dist/styles.css'
 function CustomZoom({img, alt}){
     return(
         <Zoom>
-            <img
+            <img class = "zoomed-img"
             alt={alt}
             src={img}
             width="500"

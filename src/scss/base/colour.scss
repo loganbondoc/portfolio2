@@ -22,20 +22,26 @@ body {
 }
 
 .nav-list {
-    li:hover {
-        background-color: $light-grey;
-    }
     li {
         a {
             color:black;
             text-decoration: none;
-            transition: 0.2s;
+            
         }
+        transition: 0.2s;
+    }
+
+    li:hover {
+        background-color: $light-grey;
     }
 }
 
 .black-txt {
     color: black;
+}
+
+.grey-txt {
+    color: $medium-grey;
 }
 
 .blue-line {

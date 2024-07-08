@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 // images
-import mementoBanner from '../images/memento/memento_banner.png';
+import portfolioBanner from '../images/portfolio/portfolio_banner.png';
 import designThinking from '../images/portfolio/design_thinking.png';
 import skillsIcon from '../images/portfolio/skills_icon.png';
 import storyIcon from '../images/portfolio/story_icon.png';
@@ -21,7 +21,17 @@ import personalityIcon from '../images/portfolio/personality_icon.png';
 import clutterIcon from '../images/portfolio/clutter_icon.png';
 import messyIcon from '../images/portfolio/messy_icon.png';
 import components from '../images/portfolio/components.png';
-import materialise from '../images/portfolio/materialise.png'
+import materialise from '../images/portfolio/materialise.png';
+import demo1 from '../images/portfolio/portfolio_FINAL_1.gif';
+import thematic from '../images/portfolio/thematic.png';
+import workshops from '../images/portfolio/workshops.png';
+import lessIcon from '../images/portfolio/less_icon.png';
+import mindIcon from '../images/portfolio/mind_icon.png';
+import mockup7 from '../images/portfolio/mockup7.png';
+import mockup8 from '../images/portfolio/mockup8.png';
+import mockup9 from '../images/portfolio/mockup9.png';
+import roadmap from '../images/portfolio/roadmap.png';
+import homeArt from '../images/home_art.png';
 
 // Components
 import IconText from '../components/IconText.js'
@@ -48,11 +58,20 @@ function Portfolio(){
         mockup5,
         mockup6,
     ]
+
+    const mockupImages2 = [
+        homeArt,
+        mockup7,
+        mockup8,
+        mockup9,
+    ]
     
     return(
         <div>
             <section class = "project-section">
-                <img src={mementoBanner} alt=""></img>
+                <div className = "banner-container">
+                    <img src={portfolioBanner} alt="" className="banner"></img>
+                </div>
             </section>
             <section class = "project-section">
                 <div>
@@ -96,7 +115,7 @@ function Portfolio(){
             <section class = "project-section">
                 <h3>Understand</h3>
                 <h4>To begin, I conducted secondary research by examining other UX portfolios to answer the question: What should a portfolio do?</h4>
-                <div>
+                <div class = 'icon-container'>
                     <IconText 
                         img = {skillsIcon}
                         title = "Showcase your skills"
@@ -119,22 +138,24 @@ function Portfolio(){
                 <h3>Explore</h3>
                 <h4>With the requirements of what my portfolio needed established, I began to develop artefacts that would act as guides throughout the development process.</h4>
                 <div class = "side-side-container">
-                    <div>
+                    <span>
                         <h4>Moodboard</h4>
                         <h4>What says more about you than your favourite colour? Deciding upon tones of blue as well as following a whiteboard/digitally drawn aesthetic, I aimed to add some creative flair to the website, as well as maintaining a simplistic aesthetic that was easy on the eyes.</h4>
-                        <CustomZoom
-                            img={moodboard}
-                            alt=""
-                        />
-                    </div>
-                    <div>
+                    </span>
+                    <CustomZoom
+                        img={moodboard}
+                        alt=""
+                    /> 
+                </div>
+                <div class = "side-side-container">
+                    <span>
                         <h4>Sitemap</h4>
                         <h4>Through reviewing many other design portfolios, I found commonalities of their key features, which were to show off projects in the form of case studies, a page dedicated a brief overview of the individual’s resume, as well as a final emphasis on how to contact the designer. </h4>
-                        <CustomZoom
-                            img={sitemap}
-                            alt=""
-                        />
-                    </div>
+                    </span>
+                    <CustomZoom
+                        img={sitemap}
+                        alt=""
+                    />
                 </div>
             </section>
             
@@ -171,7 +192,10 @@ function Portfolio(){
 
             <section class = "project-section">
                 <h3>The First Iteration</h3>
-                <h4>View the code here <a href = "https://github.com/loganbondoc/portfolio"> here</a></h4>
+                <h4>View the code <a href = "https://github.com/loganbondoc/portfolio"> here</a></h4>
+                <div class = "centered-image-container">
+                    <img class = "centered-image" src = {demo1}></img>
+                </div>
             </section>
 
             <section class = "project-section">
@@ -182,16 +206,22 @@ function Portfolio(){
                 <h3>Understand</h3>
                 <h4>To begin the redesign, I referred back to the Design Thinking approach where I would try to empathise with users for the shortcomings of my website, and define its key issues.</h4>
                 <div class = "side-side-container">
-                    <h4>To do this I conducted 3 semi-structured interviews on fellow UX designers, and synthesised the feedback using thematic analysis.</h4>
+                    <span>
+                        <h4>Interviews and Thematic Analysis</h4>
+                        <h4>To do this I conducted 3 semi-structured interviews on fellow UX designers, and synthesised the feedback using thematic analysis.</h4>
+                    </span>
                     <CustomZoom
-                            img={sitemap}
+                            img={thematic}
                             alt=""
                         />
                 </div>
                 <div class = "side-side-container">
-                    <h4>And attended Canva's Level Up Design Portfolio Workshop as well as hosted SUEDE's Annual Portfolio in collaboration with Atlassian. This way I could hear from recruiters about what they specifically look for in a portfolio</h4>
+                    <span>
+                        <h4>Attending Events</h4>
+                        <h4>And attended Canva's Level Up Design Portfolio Workshop as well as hosted SUEDE's Annual Portfolio in collaboration with Atlassian. This way I could hear from recruiters about what they specifically look for in a portfolio</h4>
+                    </span>
                     <CustomZoom
-                            img={sitemap}
+                            img={workshops}
                             alt=""
                         />
                 </div>
@@ -228,6 +258,9 @@ function Portfolio(){
 
             <section class = "project-section">
                 <h4>Henceforth, with myself enjoying vector-based art, I had created a new artwork in Adobe Illustrator to replace the previous animation. Mock-ups were then created to provide a base design that I would later attempt to implement utilising the React framework.</h4>
+                <CustomCarousel
+                    images = {mockupImages2}
+                />
             </section>
 
             <section class = "project-section">
@@ -239,10 +272,26 @@ function Portfolio(){
 
             <section class = "project-section">
                 <h3>Materialise</h3>
+                <h4>View the code <a href = "https://github.com/loganbondoc/portfolio2"> here</a></h4>
+                <div class = "centered-image-container">
+                    <img class = "centered-image" src = {roadmap}></img>
+                </div>
             </section>
 
             <section class = "project-section">
                 <h3>Learnings</h3>
+                <div>
+                    <IconText 
+                        img = {lessIcon}
+                        title = "Sometimes less is more"
+                        description = "It’s good to have ambitions and big goals, but overcomplicating a task through complex and cluttered designs that aren’t done to a high standard makes the whole project look bad. Simplicity and a clean design makes a website look more polished and refined."
+                    />
+                    <IconText 
+                        img = {mindIcon}
+                        title = "Keep an open mind"
+                        description = "It is ok to scrap ideas or try things from a different approach. I found it particularly difficult to give up on the large introductory animation, but simplifying the website made for a more clean and aesthetic design"
+                    />
+                </div>
             </section>
         </div>
     );

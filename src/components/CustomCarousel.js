@@ -3,7 +3,7 @@ import doubleDiamond from '../images/memento/double_diamond.png';
 
 const CustomCarousel = ({ images }) => {
     return (
-        <div class = "centered-div-container">
+        <div class = "centered-div-container carousel-div custom-carousel">
             <Carousel data-bs-theme="dark" interval={null}>
             {images.map((image, index) => (
                 <Carousel.Item key={index}>

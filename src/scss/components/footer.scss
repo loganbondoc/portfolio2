@@ -1,0 +1,31 @@
+footer {
+    height: 10vh;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+
+.con-icon-container {
+    width: 4vw;
+    height: 2vh;
+    img {
+        object-fit: cover;
+    }
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.con-icon-container {
+    img:hover {
+        filter: invert(55%) sepia(98%) saturate(1502%) hue-rotate(185deg) brightness(97%) contrast(92%);
+    }
+}

@@ -7,6 +7,7 @@ import Memento from "./pages/Memento.js"
 import Home from "./pages/Home.js"
 import Portfolio from "./pages/Portfolio.js"
 import Resume from "./pages/Resume.js"
+import Footer from "./components/Footer.js"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -35,6 +36,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
