@@ -1,5 +1,6 @@
 import React from 'react';
-import CurrentWorks from "../components/CurrentWorks.js"
+import DesignWorks from "../components/DesignWorks.js"
+import DevWorks from "../components/DevWorks.js"
 import homeArt from '../images/home_art.png';
 
 function Home(){
@@ -22,8 +23,8 @@ function Home(){
         <div>
             <div class = "project-section intro">
                 <span class = 'intro-text'>
-                    <h1 class = "blue-txt">Hello!</h1>
-                    <h1 class = 'hidden'>I'm Logan Bondoc</h1>
+                    <h1 class = "blue-txt comfortaa">Hello!</h1>
+                    <h1 class = 'hidden comfortaa'>I'm Logan Bondoc</h1>
                     <div class = 'blue-line'></div>
                 </span>
                 <span class ="home-img">
@@ -33,9 +34,10 @@ function Home(){
                 </span>
             </div>
             <section id = "works" class = "page-content">
-                <h1>Current Works</h1>
+                <h1 class = "comfortaa">Current Works</h1>
                 <div id = "nav-line"></div>
-                <CurrentWorks></CurrentWorks>
+                <DesignWorks></DesignWorks>
+                <DevWorks></DevWorks>
             </section>
         </div>
         

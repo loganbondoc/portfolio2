@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import React from 'react';
 import Nav from "./components/Nav.js"
-import CurrentWorks from "./components/CurrentWorks.js"
+import CurrentWorks from "./components/DesignWorks.js"
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Memento from "./pages/Memento.js"
 import Home from "./pages/Home.js"
 import Portfolio from "./pages/Portfolio.js"
+import UrTrip from "./pages/UrTrip.js"
 import Resume from "./pages/Resume.js"
 import Footer from "./components/Footer.js"
 
@@ -34,6 +35,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/memento" element={<Memento />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/urtrip" element={<UrTrip />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
         <Footer />

@@ -1,6 +1,6 @@
 h1, h2, h3, h4, p, a {
-    font-family: 'Comfortaa', cursive;
-    font-weight: bold;
+    font-family: "Parkinsans", serif;
+    font-weight: 600;
 }
 
 h1 {
@@ -17,4 +17,16 @@ h3 {
 
 h4 {
     font-size: 16px; 
+}
+
+.comfortaa {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+
+
+.body {
+    font-family: "Parkinsans", serif;
+    font-weight: 400;
+    line-height: 2;
 }

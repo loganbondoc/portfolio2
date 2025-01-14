@@ -9,7 +9,7 @@ function Footer(){
         <footer class = "project-section">
             <div id="nav-line"></div>
             <div class = "footer-container">
-                <h4 class = "grey-txt">Logan Bondoc</h4>
+                <h4 class = "grey-txt comfortaa">Logan Bondoc</h4>
                 <span class = "contact-container">
                     <div class = 'con-icon-container'>
                         <a href = 'mailto:loganbondoc@gmail.com'><img src = {mailIcon}></img></a>

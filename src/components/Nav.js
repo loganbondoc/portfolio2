@@ -15,9 +15,9 @@ function Nav() {
       </svg>
       <ul className="nav-list">
         <div id="nav-line"></div>
-        <li><a href="./#CurrentWorks"><h3>Works</h3></a></li>
-        <li><Link to={`/resume`}><h3>Resume</h3></Link></li>
-        <li><a href="mailto:loganbondoc@gmail.com"><h3>Contact</h3></a></li>
+        <li><a href="./#CurrentWorks"><h3 class = "body">Works</h3></a></li>
+        <li><Link to={`/resume`}><h3 class = "body">Resume</h3></Link></li>
+        <li><a href="mailto:loganbondoc@gmail.com"><h3 class = "body">Contact</h3></a></li>
       </ul>
     </nav>
   );
