@@ -72,6 +72,7 @@ function Home() {
             defaultValue="all"
             selectedValue={selectedCategory}
             onSelectionChange={(value) => setSelectedCategory(value)}
+            variant="underlined"
           >
             {(category) => (
               <Tab key={category.id} title={category.label}>
@@ -97,7 +98,7 @@ function Home() {
                         <CardBody>
                           <h3>{project.title}</h3>
                           <p>{project.description}</p>
-                          <Chip color="primary">{project.category}</Chip>
+                          <Chip color="primary" size="md" radius="md">{project.category}</Chip>
                         </CardBody>
                       </Card>
                     ))}
