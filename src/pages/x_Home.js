@@ -2,7 +2,7 @@ import React from 'react';
 import DesignWorks from "../components/DesignWorks.js"
 import DevWorks from "../components/DevWorks.js"
 import homeArt from '../images/home_art.png';
-import {Tabs, Tab} from "@nextui-org/tabs";
+import {Tabs, Tab} from "@heroui/tabs";
 
 function Home(){
     return (
@@ -21,7 +21,7 @@ function Home(){
         //     </section>
         // </div>
 
-        <div>
+        (<div>
             <div class = "project-section intro">
                 <span class = 'intro-text'>
                     <h1 class = "blue-txt comfortaa">Hello!</h1>
@@ -40,9 +40,8 @@ function Home(){
                 <DesignWorks></DesignWorks>
                 <DevWorks></DevWorks>
             </section>
-        </div>
-        
-    )
+        </div>)
+    );
 
 }
 

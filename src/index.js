@@ -5,14 +5,17 @@ import 'react-medium-image-zoom/dist/styles.css'
 import './scss/main.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {HeroUIProvider} from "@heroui/system";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <main className="text-foreground bg-background">
-      <App />
-    </main>
-    
+    <HeroUIProvider>
+      {/* change colour later */}
+      <main className="light text-foreground bg-background">
+        <App />
+      </main>
+    </HeroUIProvider>
   </React.StrictMode>
 );
 

@@ -1,14 +1,21 @@
-import logo from './logo.svg';
+import logo from './images/lb_logo 2.0.svg';
 import React from 'react';
 import Nav from "./components/Nav.js"
 import CurrentWorks from "./components/DesignWorks.js"
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
+import CustomCursor from './utils/customcursor.js';
+import { CursorContextProvider } from './utils/cursorcontext.js';
+
+//Images
 import Memento from "./pages/Memento.js"
 import Home from "./pages/Home.js"
 import Portfolio from "./pages/Portfolio.js"
 import UrTrip from "./pages/UrTrip.js"
 import Resume from "./pages/Resume.js"
 import Footer from "./components/Footer.js"
+
+//Components
+
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -28,19 +35,30 @@ function ScrollToTop() {
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <Nav />
-        <ScrollToTop />
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/memento" element={<Memento />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/urtrip" element={<UrTrip />} />
-          <Route path="/resume" element={<Resume />} />
-        </Routes>
-        <Footer />
-      </div>
+       {/* <CursorContextProvider> */}
+        {/* <CustomCursor /> */}
+          <div id = "app" >
+          <Nav/>
+
+          {/* Scroll to Top */}
+          <ScrollToTop />
+
+          {/* Routes */}
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/memento" element={<Memento />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/urtrip" element={<UrTrip />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+
+          {/* Footer */}
+          <Footer />
+        </div>
+      {/* </CursorContextProvider> */}
+
     </BrowserRouter>
   );
 }
+
 export default App;
