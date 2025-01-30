@@ -3,6 +3,7 @@ import { Tabs, Tab } from "@heroui/tabs";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
 import parallaxBg from "../images/parallax_bg.png";
+import parallaxBg2 from "../images/parallax_bg2.png";
 import mementoImg from "../images/memento_work.png";
 import portfolioImg from "../images/portfolio_work.png";
 import homeArt from "../images/home_art.png";
@@ -44,7 +45,7 @@ function Home() {
   const { scrollYProgress } = useScroll();
 
   // Adjust parallax speed (change -30% to -50% for faster effect)
-  const yTransform = useTransform(scrollYProgress, [0, 1], ["0%", "-500%"]);
+  const yTransform = useTransform(scrollYProgress, [0, 1], ["0%", "-900%"]);
 
   // Smooth out motion
   const smoothYTransform = useSpring(yTransform, {
@@ -65,11 +66,12 @@ function Home() {
       <motion.div
         className="fixed top-0 left-0 w-full min-h-[200vh] pointer-events-none"
         style={{
-          backgroundImage: `url(${parallaxBg})`, // ✅ Using correct background
+          backgroundImage: `url(${parallaxBg2})`, // ✅ Using correct background
           backgroundSize: "cover", // ✅ Ensures the full image fills the background
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center top",
           y: smoothYTransform, // ✅ Moves background at a slower speed
+          width: "100vw", // ✅ Ensures it fills the full width of the screen
           zIndex: -10, // ✅ Ensures it's behind all content
         }}
       ></motion.div>
@@ -145,9 +147,6 @@ function Home() {
             )}
           </Tabs>
         </section>
-
-        {/* Primary Color Test */}
-        <div className="primary text-white p-4">Primary color test</div>
       </div>
     </div>
   );

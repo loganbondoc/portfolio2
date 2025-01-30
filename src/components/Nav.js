@@ -11,6 +11,7 @@ import {
   NavbarMenu,
   NavbarMenuItem
 } from "@heroui/navbar";
+import DividerLine from './DividerLine';
 
 function Nav() {
   return (
@@ -36,7 +37,8 @@ function Nav() {
         <NavbarBrand justify="start">
           <img src={logo} alt="Logo" className="h-10 mx-4"/> {/* Adjust height */}
         </NavbarBrand>
-        <Divider/>
+        {/* <Divider/> */}
+        <DividerLine/>
         {/* Navbar Content (Links) */}
         <NavbarContent className="hidden sm:flex gap-4" justify="end">
           <NavbarItem className="hidden lg:flex">
