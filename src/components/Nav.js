@@ -32,7 +32,7 @@ function Nav() {
     //     <li><a href="mailto:loganbondoc@gmail.com"><h3 class = "body">Contact</h3></a></li>
     //   </ul>
     // </nav>
-    <Navbar shouldHideOnScroll className="w-full flex items-center px-8 py-3">
+    <Navbar shouldHideOnScroll className="w-full flex items-center px-8 py-3 bg-transparent">
     {/* Left: Logo */}
     <Link to={`/`}>
       <NavbarBrand className="flex-none">
