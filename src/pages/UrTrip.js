@@ -65,6 +65,9 @@ function UrTrip(){
             <section class = "project-section">
                 <h2>Introducing...</h2>
             </section>
+            <section class = "project-section">
+                <h2>Concerns</h2>
+            </section>
         </div>
     );
 }
