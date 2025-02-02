@@ -26,38 +26,41 @@ function Nav() {
     //     </g>
     //   </svg>
     //   <ul className="nav-list">
-    //     <div id="nav-line"></div>
+    //     <DividerLine />
     //     <li><a href="./#CurrentWorks"><h3 class = "body">Works</h3></a></li>
     //     <li><Link to={`/resume`}><h3 class = "body">Resume</h3></Link></li>
     //     <li><a href="mailto:loganbondoc@gmail.com"><h3 class = "body">Contact</h3></a></li>
     //   </ul>
     // </nav>
-      <Navbar shouldHideOnScroll className="flex items-center justify-center w-full">
-      {/* Navbar Brand (Logo) */}
-        <NavbarBrand justify="start">
-          <img src={logo} alt="Logo" className="h-10 mx-4"/> {/* Adjust height */}
-        </NavbarBrand>
-        {/* <Divider/> */}
-        <DividerLine/>
-        {/* Navbar Content (Links) */}
-        <NavbarContent className="hidden sm:flex gap-4" justify="end">
-          <NavbarItem className="hidden lg:flex">
-            <a href="./#CurrentWorks" className="text-lg hover:text-primary">
-              Works
-            </a>
-          </NavbarItem>
-          <NavbarItem>
-            <a href="/resume" className="text-lg hover:text-primary">
-              Resume
-            </a>
-          </NavbarItem>
-          <NavbarItem>
-            <a href="mailto:loganbondoc@gmail.com" className="text-lg hover:text-primary">
-              Contact
-            </a>
-          </NavbarItem>
-        </NavbarContent>
-    </Navbar> 
+    <Navbar shouldHideOnScroll className="w-full flex items-center px-8 py-3">
+    {/* Left: Logo */}
+    <Link to={`/`}>
+      <NavbarBrand className="flex-none">
+        <img src={logo} alt="Logo" className="h-12 w-auto" />
+      </NavbarBrand>
+    </Link>
+  
+    {/* Middle: Divider (Expands Fully) */}
+    <div className="flex-1 mx-6">
+      <Divider className="border-gray-400" />
+    </div>
+  
+    {/* Right: Navbar Links (Sticks to the Right) */}
+    <NavbarContent className="flex flex-none justify-end space-x-6">
+      <NavbarItem>
+        <Link to="/resume" className="text-lg hover:text-primary">Resume</Link>
+      </NavbarItem>
+      <NavbarItem>
+        <a href="./#CurrentWorks" className="text-lg hover:text-primary">Works</a>
+      </NavbarItem>
+      <NavbarItem>
+        <a href="mailto:loganbondoc@gmail.com" className="text-lg hover:text-primary">Contact</a>
+      </NavbarItem>
+    </NavbarContent>
+  </Navbar>
+
+
+
   );
 }
 

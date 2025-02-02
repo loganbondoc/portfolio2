@@ -7,17 +7,21 @@ import CustomCarousel from '../components/CustomCarousel.js';
 // import { Carousel } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import CustomZoom from '../components/CustomZoom.js';
+import urTripBanner from '../images/urtrip/urtrip_banner.png';
 
 function UrTrip(){
     return(    
-        <div>
+        <div class = "project-background">
+            
             <section class = "project-section">
-                {/* <img src={mementoBanner} alt=""></img> */}
+            <div className="banner-container">
+                    <img src={urTripBanner} alt="" className="banner"></img>
+                </div>
             </section>
             <section class = "project-section">
                 <div>
-                    <h1>Memento</h1>
-                    <h3>Addressing Post-Party Effects in Young people</h3>
+                    <h1 class="header">UrTrip</h1>
+                    <h3>Making travel planning more personal</h3>
                 </div>
                 <div>
                     <h2>Role</h2>
@@ -37,10 +41,13 @@ function UrTrip(){
             </section>
             
             <section class = "project-section">
-                <h2>The Problem Area</h2>
+                <h2>The Problem</h2>
+                <h2>Low Engagement with Post-Booking Content</h2>
                 <h4>
-                We've all experienced the excitement of attending gatherings, whether it's with friends, family, or even strangers. But what happens after the festivities? Consider this: in a study involving 28 brides, over half reported experiencing clinical levels of depression post-wedding.
-As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaration during events, followed by a harsh reality check. The initial euphoria fades as the feel-good chemicals in our bodies diminish. Whether it's physical, emotional, or psychological, there's a notable pattern of post-event emotions emerging among younger generations.
+                Generic post-booking content and upselling of accommodations often feel impersonal and disconnected from the user’s specific itinerary, resulting in low engagement and missed revenue opportunities.
+                </h4>
+                <h4>
+                Trip.com’s post-purchase page serves as one example of a common experience across booking platforms, airlines, and travel insurance providers. Similar layouts and content are found widely, highlighting a lack of tailored engagement in the industry.
                 </h4>
             </section>
             <section class = "project-section">
@@ -52,9 +59,11 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                     Delivering the solution to our target demographic</h4>
             </section>
             <section class = "project-section">
-                <div class = "centered-image-container">
-                    {/* <img class = "centered-image" src = {doubleDiamond}></img> */}
-                </div>
+                <h2>An Opportunity</h2>
+                <h4>Travel is supposed to be exciting! By offering personalised insights and tailored recommendations, these interactions could be transformed into valuable revenue streams that enhance the user experience.</h4>
+            </section>
+            <section class = "project-section">
+                <h2>Introducing...</h2>
             </section>
         </div>
     );

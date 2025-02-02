@@ -4,8 +4,8 @@ nav {
     align-items: center;
     justify-content: center;
     margin-top: 1vw;
-    // margin-left: 3vw;
-    // margin-right: 2vw;
+    margin-left: 3vw;
+    margin-right: 2vw;
 }
 
 .nav-list {
@@ -15,7 +15,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    // justify-content: space-around;
+    justify-content: space-around;
     li {
         margin-left: 1vw;
         padding-top: 0.15vw;
@@ -29,5 +29,5 @@ nav {
 #logo {
     max-width: 3vw;
     margin-right: 3vw;
-    // margin-left: 1vw;
+    margin-left: 1vw;
 }

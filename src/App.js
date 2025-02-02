@@ -37,7 +37,7 @@ function App() {
     <BrowserRouter>
        {/* <CursorContextProvider> */}
         {/* <CustomCursor /> */}
-          <div id = "app" >
+          <div>
           <Nav/>
 
           {/* Scroll to Top */}

@@ -10,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
-        comfortaa: ["Comfortaa", "cursive"],
+        sans: ['Parkinsans', 'ui-sans-serif', 'system-ui'],
+        comfortaa: ["Comfortaa", "ui-sans-serif"],
       },
     },
     // colors: {
@@ -23,12 +23,12 @@ module.exports = {
     heroui({
       // addCommonColors: true, // Adds common colors like "primary", "secondary", etc.
       layout: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+        sans: ['Parkinsans', 'ui-sans-serif', 'system-ui'],
       },
       themes: {
         light: {
           colors: {
-            background: "F8F8FF",
+            background: "#F8F8FF",
             primary: {
               DEFAULT: "#4C9EED",
             }, // Custom primary color

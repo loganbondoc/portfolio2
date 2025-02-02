@@ -4,11 +4,13 @@ import mailIcon from '../images/mail_icon.png';
 import linkedinIcon from '../images/linkedin_icon.png';
 import githubIcon from '../images/github_icon.png';
 import DividerLine from './DividerLine';
+import {Divider} from "@heroui/divider";
 
 function Footer(){
     return(
         <footer class = "project-section">
-            <DividerLine/>
+            {/* <DividerLine/> */}
+            <Divider className="border-gray-400" />
             <div class = "footer-container">
                 <h4 class = "grey-txt comfortaa">Logan Bondoc</h4>
                 <span class = "contact-container">

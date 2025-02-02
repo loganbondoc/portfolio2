@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Tabs, Tab } from "@heroui/tabs";
 import { Card, CardBody } from "@heroui/card";
 import { Chip } from "@heroui/chip";
+import parallaxBg from "../images/parallax_bg.png";
 import parallaxBg2 from "../images/parallax_bg2.png";
 import mementoImg from "../images/memento_work.png";
 import portfolioImg from "../images/portfolio_work.png";
@@ -62,19 +63,19 @@ function Home() {
 
   return (
     <div className="relative min-h-screen">
-      {/* 🔵 Parallax Background Inside Home Page (Not Affecting Other Pages) */}
-      <div className="absolute inset-0 overflow-hidden z-0">
+      {/* 🔵 Full-Page Parallax Background */}
       <motion.div
-        className="fixed inset-0 w-full min-h-[200vh] pointer-events-none z-0"
+        className="fixed top-0 left-0 w-full min-h-[200vh] pointer-events-none"
         style={{
-          backgroundImage: `url(${parallaxBg2})`,
-          backgroundSize: "cover",
+          backgroundImage: `url(${parallaxBg2})`, // ✅ Using correct background
+          backgroundSize: "cover", // ✅ Ensures the full image fills the background
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center top",
-          y: smoothYTransform, // Moves the background at a slower speed
+          y: smoothYTransform, // ✅ Moves background at a slower speed
+          width: "100vw", // ✅ Ensures it fills the full width of the screen
+          zIndex: -10, // ✅ Ensures it's behind all content
         }}
-    ></motion.div>
-      </div>
+      ></motion.div>
 
       {/* 🔹 Your Existing Layout (Unchanged) */}
       <div className="relative z-10">
@@ -134,7 +135,7 @@ function Home() {
                           className="card-image"
                         />
                         <CardBody>
-                          <h3 className="header">{project.title}</h3>
+                          <h3 class="header">{project.title}</h3>
                           <p>{project.description}</p>
                           <Chip color="primary" className="body" size="md" radius="md">
                             {project.category}

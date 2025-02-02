@@ -6,9 +6,9 @@ $medium-grey: #A7A7A7;
 $light-grey: #d9d9d9;
 $black: #242424;
 
-body {
-    background: transparent !important;
-}
+// body {
+//     background: transparent !important;
+// }
 
 .blue-txt {
     color: $blue;
@@ -61,3 +61,7 @@ body {
 .background-blue {
     @apply bg-light-blue;
 }
+
+// .project-background {
+//     background-color: $ghost-white;
+// }
