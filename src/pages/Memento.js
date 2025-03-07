@@ -139,10 +139,10 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                 <h4>
                     Our design process for Memento, was based upon the double diamond method. Through this, we implemented phases of:<br/>
                     <ul>
-                        <li>Discovering more about the chosen topic</li>
-                        <li>Defining the key issues that needed to be addressed</li>
-                        <li>Developing and ideating a key solution</li>
-                        <li>Delivering the solution to our target demographic</li>
+                        <li><h4><strong>Discovering</strong> more about the chosen topic</h4></li>
+                        <li><h4><strong>Defining</strong> the key issues that needed to be addressed</h4></li>
+                        <li><h4><strong>Developing</strong> and ideating a key solution</h4></li>
+                        <li><h4><strong>Delivering</strong> the solution to our target demographic</h4></li>
                     </ul>
                     
                 </h4>
@@ -154,7 +154,9 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
 
             <section class = "project-section">
                 <h3 class="header comfortaa">Secondary Research</h3>
-                <h4>To begin our research, we conducted secondary research in the form of reviewing academic literature to see what debriefing methods were currently available and SWOT Analysis to see where these forms of recovery fall short.<br/></h4>
+                <h4>To begin our research, we conducted secondary research in the form of reviewing <strong>academic literature </strong> 
+                    to see what debriefing methods were currently available and <strong> SWOT Analysis</strong> to see where these forms 
+                    of recovery fall short.<br/></h4>
                 <br/>
                 <h4>We found that:</h4>
                 <IconText
@@ -170,16 +172,18 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                     <h4>SWOT Analysis</h4>
                     <h4>Reconnecting with friends and loved ones after an event relies on their availability and understanding, while a social stigma surrounding these emotions make individuals hesitant to open up.</h4>
                 </div>
-                <h4>Which allowed us to develop our research goals:</h4>
+                <h4><strong>We still had some questions though, and used them to drive our primary research</strong></h4>
                 <div>
                     <span><h2>How</h2><h4>does the presence of shyness or sociability influence the experience of post-party blues and the effectiveness of existing strategies?</h4></span>
                     <span><h2>What</h2><h4>kind of negative thoughts and feelings are young people having after a festive season, event or party?</h4></span>
                     <span><h2>How</h2><h4>and why are young people engaging in social debriefing sessions with their friends after events?</h4></span>
                 </div>
             </section>
+            <Divider />
 
             <section class = "project-section">
-                <h2>With these goals in mind, we began Primary Research, using a triangulation approach that balance the weaknesses between each research method.</h2>
+                <h2 class="comfortaa">Primary Research</h2>
+                <h4>Our Primary Research used a <strong>triangulation approach</strong> to balance the weaknesses between each research method</h4>
                 <div class="centered-image-container">
                     <img src={triangulation} alt="" class = "centered-image"></img>
                 </div>
