@@ -1,22 +1,22 @@
 import { Carousel } from 'react-bootstrap';
-import doubleDiamond from '../images/memento/double_diamond.png';
 
 const CustomCarousel = ({ images }) => {
     return (
-        <div class = "centered-div-container carousel-div custom-carousel">
-            <Carousel data-bs-theme="dark" interval={null}>
-            {images.map((image, index) => (
-                <Carousel.Item key={index}>
-                    <img
-                        className="d-block w-100"
-                        src={image}
-                        alt={`Slide ${index}`}
-                    />
-                </Carousel.Item>
-            ))}
-        </Carousel>
+        <div className="flex justify-center items-center my-6">
+            <div className="w-full"> {/* Adjust width as needed */}
+                <Carousel data-bs-theme="dark" interval={null}>
+                    {images.map((image, index) => (
+                        <Carousel.Item key={index}>
+                            <img
+                                className="d-block w-full"
+                                src={image}
+                                alt={`Slide ${index}`}
+                            />
+                        </Carousel.Item>
+                    ))}
+                </Carousel>
+            </div>
         </div>
-        
     );
 };
 

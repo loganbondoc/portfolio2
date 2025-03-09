@@ -9,7 +9,14 @@ import recoveryIcon from '../images/memento/icons/recovery_icon.png';
 import reconnectIcon from '../images/memento/icons/reconnect_icon.png';
 import debriefIcon from '../images/memento/icons/debrief_icon.png';
 import shyIcon from '../images/memento/icons/shy_icon.png';
-import thoughtsIcon from '../images/memento/icons/thoughts_icon.png'; 
+import thoughtsIcon from '../images/memento/icons/thoughts_icon.png';
+
+// Primary Research Images
+import indivRecoveryIcon from '../images/memento/icons/indiv_recovery_icon.png';
+import memoryIcon from '../images/memento/icons/memory_icon.png';
+import routineIcon from '../images/memento/icons/routine_icon.png';
+import socialIcon from '../images/memento/icons/social_icon.png';
+import societyIcon from '../images/memento/icons/society_icon.png';
 
 // Images
 import mementoBanner from '../images/memento/memento_banner.png';
@@ -52,7 +59,7 @@ import latch from '../images/memento/latch.png';
 import preservationIcon from '../images/memento/preservation_icon.png';
 import reconnectionIcon from '../images/memento/reconnection_icon.png';
 import societalIcon from '../images/memento/societal_icon.png';
-import routineIcon from '../images/memento/routine_icon.png';
+// import routineIcon from '../images/memento/routine_icon.png';
 import mementoDiagram from '../images/memento/memento_diagram.png';
 import transformation from '../images/memento/transformation.png';
 
@@ -227,11 +234,13 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             </section>
 
             <section class = "project-section">
-                <h4>With all the data we collated, we grouped our findings using Affinity Mapping.</h4>
-                <CustomZoom
-                    img = {researchAffinity}
-                    alt = ""
-                />
+                <div>
+                    <h4>With all the data we collated, we grouped our findings using Affinity Mapping.</h4>
+                    <CustomZoom
+                        img = {researchAffinity}
+                        alt = ""
+                    />
+                </div>
             </section>
 
             <section class = "project-section">
@@ -245,32 +254,49 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             </section>
 
             <section class = "project-section">
-                <h4>We found that:</h4>
+                <h3 class="comfortaa text-center">Key User Insights</h3>
                 <div>
                     <IconText 
-                        img = {societalIcon}
-                        title = "Societal pressure"
-                        description = "There is an expectation to sustain productivity, maintain appearances and update others on activity whilst experiencing post-event emotions."
+                        img = {societyIcon}
+                        title = {<h4><strong>Societal pressure</strong></h4>}
+                        description = {<h4>
+                            There is an expectation to sustain productivity, maintain appearances 
+                            and update others on activity whilst experiencing post-event emotions.
+                        </h4>}
                     />
                     <IconText 
                         img = {routineIcon}
-                        title = "Returning to routine"
-                        description = "Experiencing a highly anticipated, fun and active event following a sudden shift back into a normal routine can lead to individuals feeling discontentment and losing their sense of purpose"
+                        title = {<h4><strong>Returning to routine</strong></h4>}
+                        description = {<h4>
+                            Experiencing a highly anticipated, fun and active event following a sudden shift back 
+                            into a normal routine 
+                            can lead to individuals feeling discontentment and losing their sense of purpose
+                        </h4>}
                     />
                     <IconText 
-                        img = {recoveryIcon}
-                        title = "Individual Recovery"
-                        description = "Individuals resort to a balance of solitary outlets productive routines that assist in overcoming their negative post-event emotions."
+                        img = {indivRecoveryIcon}
+                        title = {<h4><strong>Individual Recovery</strong></h4>}
+                        description = {<h4>
+                            Individuals resort to a balance of solitary outlets productive routines that 
+                            assist in overcoming their negative post-event emotions.
+                        </h4>}
                     />
                     <IconText 
-                        img = {reconnectionIcon}
-                        title = "Social Reconnection"
-                        description = "Human interaction is vital during the post-event phase. Young people connect with each other through storytelling and expression, countering feelings of isolation and disconnection."
+                        img = {socialIcon}
+                        title = {<h4><strong>Social Reconnection</strong></h4>}
+                        description = {<h4>
+                            Human interaction is vital during the post-event phase. Young people connect with each other through 
+                            storytelling and expression, countering feelings of isolation and disconnection.
+                        </h4>}
                     />
                     <IconText 
-                        img = {preservationIcon}
-                        title = "Memory Preservation"
-                        description = "Preserving the memories of an event can reduce the abrupt “morning-after” emotions of anxiety. Examples of this include revisiting photos, listening to the same music or replicating the setting to keep the memory alive."
+                        img = {memoryIcon}
+                        title = {<h4><strong>Memory Preservation</strong></h4>}
+                        description = {<h4>
+                            Preserving the memories of an event can reduce the abrupt “morning-after” emotions of anxiety. 
+                            Examples of this include revisiting 
+                            photos, listening to the same music or replicating the setting to keep the memory alive.
+                        </h4>}
                     />
                 </div>
             </section>

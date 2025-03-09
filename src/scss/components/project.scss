@@ -1,4 +1,7 @@
 .project-section {
+    // @apply flex flex-col justify-center mx-[15vw] my-6;
+    
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,13 +9,13 @@
     margin-right: 15vw;
     margin-top: 5vw;
 
-    h3 {
-        margin-top: 2vh;
-    }
+    // h3 {
+    //     margin-top: 2vh;
+    // }
 
-    h4 {
-        margin-top: 1vh;
-    }
+    // h4 {
+    //     margin-top: 1vh;
+    // }
 }
 
 .persona-container {
