@@ -18,6 +18,11 @@ import routineIcon from '../images/memento/icons/routine_icon.png';
 import socialIcon from '../images/memento/icons/social_icon.png';
 import societyIcon from '../images/memento/icons/society_icon.png';
 
+// Develop Images
+import memory from '../images/memento/artefacts/memory_infographic.png';
+import stash from '../images/memento/artefacts/stash_infographic.png';
+import museum from '../images/memento/artefacts/museum_infographic.png';
+
 // Images
 import mementoBanner from '../images/memento/memento_banner.png';
 
@@ -25,9 +30,6 @@ import triangulation from '../images/memento/triangulation.png';
 import sus from '../images/memento/sus.png';
 import thinkAloud from '../images/memento/think-aloud.png';
 import cognitiveWalkthrough from '../images/memento/cognitive-walkthrough.png';
-import memory from '../images/memento/memory.png';
-import stash from '../images/memento/stash.png';
-import museum from '../images/memento/museum.png';
 import researchAffinity from '../images/memento/research_affinity.png';
 import datasheet from '../images/memento/datasheet.png';
 import chris from '../images/memento/chris.png';

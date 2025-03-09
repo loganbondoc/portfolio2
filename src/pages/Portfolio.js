@@ -117,18 +117,28 @@ function Portfolio(){
                 <div className="icon-container">
                     <IconText 
                         img={skillsIcon}
-                        title="Showcase your skills"
-                        description="A portfolio should demonstrate your expertise in the creative realm. A clean aesthetic and well-thought-out website should show that you can apply those skills in a real-world situation."
+                        title={<h4><strong>Showcase your skills</strong></h4>}
+                        description={<h4>
+                            A portfolio should demonstrate your expertise in the creative realm. 
+                            A clean aesthetic and well-thought-out website should show that you can 
+                            apply those skills in a real-world situation.
+                        </h4>}
                     />
                     <IconText 
                         img={youIcon}
-                        title="Be a representation of you"
-                        description="Give your portfolio some personality. It should tell viewers who you are as a designer, where your passions lie, and show off your creative flair."
+                        title={<h4><strong>Be a representation of you</strong></h4>}
+                        description={<h4>
+                            Give your portfolio some personality. It should tell viewers who you are as 
+                            a designer, where your passions lie, and show off your creative flair.
+                        </h4>}
                     />
                     <IconText 
                         img={storyIcon}
-                        title="Tell a story"
-                        description="Your case studies should speak volumes about your approach to a design problem, all while keeping the reader engaged with plenty of artefacts and visuals."
+                        title={<h4><strong>Tell a story</strong></h4>}
+                        description={<h4>
+                            Your case studies should speak volumes about your approach to a design problem, 
+                            all while keeping the reader engaged with plenty of artefacts and visuals.
+                        </h4>}
                     />
                 </div>
             </section>
@@ -223,18 +233,31 @@ function Portfolio(){
                 <div>
                     <IconText 
                         img={personalityIcon}
-                        title="Lack of Personality"
-                        description="Users commented on a lack of personal touch. The website didn’t reflect myself as a person and was likened to a slide show presentation. From the Canva presentation I learnt that a “portfolio should be like your digital fingerprint”"
+                        title={<h4><strong>Lack of Personality</strong></h4>}
+                        description={<h4>
+                            "Users commented on a lack of personal touch. The website didn’t 
+                            reflect myself as a person and was likened to a slide show presentation. 
+                            From the Canva presentation I learnt that a “portfolio should be like your 
+                            digital fingerprint”
+                        </h4>}
                     />
                     <IconText 
                         img={clutterIcon}
-                        title="Case Study Clutter"
-                        description="The “works” section was very limited in space, and provided a very shallow overview of the projects I was showcasing. It needed to be reworked to improve readability and a more extensive outline of my work."
+                        title={<h4><strong>Case Study Clutter</strong></h4>}
+                        description={<h4>
+                            "The “works” section was very limited in space, and provided a 
+                            very shallow overview of the projects I was showcasing. It needed to be 
+                            reworked to improve readability and a more extensive outline of my work.
+                        </h4>}
                     />
                     <IconText 
                         img={messyIcon}
-                        title="Messy Code"
-                        description="The use of the Director.js library, as well as the large amount of intersection observers resulted in the script.js file becoming cluttered and having a lot of repeated code. It required optimisation."
+                        title={<h4><strong>Messy Code</strong></h4>}
+                        description={<h4>
+                            The use of the Director.js library, as well as the large amount of 
+                            intersection observers resulted in the script.js file becoming cluttered 
+                            and having a lot of repeated code. It required optimisation.
+                        </h4>}
                     />
                 </div>
             </section>
@@ -269,13 +292,22 @@ function Portfolio(){
                 <div>
                     <IconText 
                         img={lessIcon}
-                        title="Sometimes less is more"
-                        description="It’s good to have ambitions and big goals, but overcomplicating a task through complex and cluttered designs that aren’t done to a high standard makes the whole project look bad. Simplicity and a clean design makes a website look more polished and refined."
+                        title={<h4><strong>Sometimes less is more</strong></h4>}
+                        description={<h4>
+                            It’s good to have ambitions and big goals, but overcomplicating a task through 
+                            complex and cluttered designs that aren’t done to a high standard makes the whole 
+                            project look bad. Simplicity and a clean design makes a website look more 
+                            polished and refined.
+                        </h4>}
                     />
                     <IconText 
                         img={mindIcon}
-                        title="Keep an open mind"
-                        description="It is ok to scrap ideas or try things from a different approach. I found it particularly difficult to give up on the large introductory animation, but simplifying the website made for a more clean and aesthetic design"
+                        title={<h4><strong>Keep an open mind</strong></h4>}
+                        description={<h4>
+                            It is ok to scrap ideas or try things from a different approach. 
+                            I found it particularly difficult to give up on the large introductory 
+                            animation, but simplifying the website made for a more clean and aesthetic design
+                        </h4>}
                     />
                 </div>
             </section>
