@@ -1,9 +1,19 @@
 import React, { useEffect } from 'react';
 import { Divider } from '@heroui/divider';
 
+// Research Approach Images
+import doubleDiamond from '../images/memento/double_diamond.png';
+
+// Secondary Research Images
+import recoveryIcon from '../images/memento/icons/recovery_icon.png';
+import reconnectIcon from '../images/memento/icons/reconnect_icon.png';
+import debriefIcon from '../images/memento/icons/debrief_icon.png';
+import shyIcon from '../images/memento/icons/shy_icon.png';
+import thoughtsIcon from '../images/memento/icons/thoughts_icon.png'; 
+
 // Images
 import mementoBanner from '../images/memento/memento_banner.png';
-import doubleDiamond from '../images/memento/double_diamond.png';
+
 import triangulation from '../images/memento/triangulation.png';
 import sus from '../images/memento/sus.png';
 import thinkAloud from '../images/memento/think-aloud.png';
@@ -41,7 +51,6 @@ import latch from '../images/memento/latch.png';
 
 import preservationIcon from '../images/memento/preservation_icon.png';
 import reconnectionIcon from '../images/memento/reconnection_icon.png';
-import recoveryIcon from '../images/memento/recovery_icon.png';
 import societalIcon from '../images/memento/societal_icon.png';
 import routineIcon from '../images/memento/routine_icon.png';
 import mementoDiagram from '../images/memento/memento_diagram.png';
@@ -53,6 +62,7 @@ import CustomCarousel from '../components/CustomCarousel.js';
 // import { Carousel } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import CustomZoom from '../components/CustomZoom.js';
+import InfoItem from "../components/InfoItem";
 
 function Memento() {
     useEffect(() => {
@@ -126,7 +136,7 @@ function Memento() {
             </section>
             
             <section class = "project-section">
-            <h2 class="comfortaa">The Problem Area</h2>
+            <h3 class="comfortaa spaced-header">The Problem Area</h3>
                 <h4>
                 We've all experienced the excitement of attending gatherings, whether it's with friends, family, or even strangers. But what happens after the festivities? Consider this: in a study involving 28 brides, over half reported experiencing clinical levels of depression post-wedding.
 As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaration during events, followed by a harsh reality check. The initial euphoria fades as the feel-good chemicals in our bodies diminish. Whether it's physical, emotional, or psychological, there's a notable pattern of post-event emotions emerging among younger generations.
@@ -135,10 +145,10 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             <Divider />
 
             <section class = "project-section">
-                <h2 class="comfortaa">Research Approach</h2>
+                <h3 class="comfortaa spaced-header">Research Approach</h3>
                 <h4>
                     Our design process for Memento, was based upon the double diamond method. Through this, we implemented phases of:<br/>
-                    <ul>
+                    <ul className="list-disc pl-5">
                         <li><h4><strong>Discovering</strong> more about the chosen topic</h4></li>
                         <li><h4><strong>Defining</strong> the key issues that needed to be addressed</h4></li>
                         <li><h4><strong>Developing</strong> and ideating a key solution</h4></li>
@@ -153,37 +163,63 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             <Divider />
 
             <section class = "project-section">
-                <h3 class="header comfortaa">Secondary Research</h3>
+                <h3 class="comfortaa spaced-header">Secondary Research</h3>
                 <h4>To begin our research, we conducted secondary research in the form of reviewing <strong>academic literature </strong> 
                     to see what debriefing methods were currently available and <strong> SWOT Analysis</strong> to see where these forms 
                     of recovery fall short.<br/></h4>
                 <br/>
                 <h4>We found that:</h4>
                 <IconText
-                    img = {societalIcon}
-                    title = "Current recovery methods include:"
-                    description = "There is an expectation to sustain productivity, maintain appearances and update others on activity whilst experiencing post-event emotions.">
+                    img = {recoveryIcon}
+                    title = {<h4><strong>Current recovery methods include:</strong></h4>}
+                    description={
+                        <ul className="list-disc pl-5">
+                            <li><h4>Jounalling thoughts and feelings</h4></li>
+                            <li><h4>Hosting Debriefing parties both online and in-person to facilitate reconnection</h4></li>
+                        </ul>
+                    }>
                 </IconText>
-                <div>
-                    <h4>Academic Literature</h4>
-                    <h4>Current recovery methods from Post Party Blues include: Jounalling thoughts and feelings Hosting Debriefing parties both online and in-person to facilitate reconnection</h4>
-                </div>
-                <div>
-                    <h4>SWOT Analysis</h4>
-                    <h4>Reconnecting with friends and loved ones after an event relies on their availability and understanding, while a social stigma surrounding these emotions make individuals hesitant to open up.</h4>
-                </div>
-                <h4><strong>We still had some questions though, and used them to drive our primary research</strong></h4>
-                <div>
-                    <span><h2>How</h2><h4>does the presence of shyness or sociability influence the experience of post-party blues and the effectiveness of existing strategies?</h4></span>
-                    <span><h2>What</h2><h4>kind of negative thoughts and feelings are young people having after a festive season, event or party?</h4></span>
-                    <span><h2>How</h2><h4>and why are young people engaging in social debriefing sessions with their friends after events?</h4></span>
-                </div>
+                <IconText
+                    img = {reconnectIcon}
+                    title = {<h4><strong>Reconnecting with friends and loved ones after an event:</strong></h4>}
+                    description={
+                        <ul className="list-disc pl-5">
+                            <li><h4>Relies on their availability and understanding</h4></li>
+                            <li><h4>Is restricted by a social stigma, causing hesitation to open up</h4></li>
+                        </ul>
+                    }>
+                </IconText>
+                <h4 class="spaced-header"><strong>We still had some questions though, and used them to drive our primary research</strong></h4>
+                <IconText
+                    img = {shyIcon}
+                    title = {""}
+                    description={
+                        <h4>How does the presence of <strong>shyness or sociability</strong> influence the experience
+                            of post-party blues and the <strong>effectiveness</strong> of existing strategies?</h4>
+                    }>
+                </IconText>
+                <IconText
+                    img = {debriefIcon}
+                    title = {""}
+                    description={
+                        <h4>How and why are young people engaging in <strong>social debriefing </strong> 
+                            sessions with their friends after events?</h4>
+                    }>
+                </IconText>
+                <IconText
+                    img = {thoughtsIcon}
+                    title = {""}
+                    description={
+                        <h4>What kind of <strong>negative thoughts</strong> and feelings are young people having  
+                            <strong> after</strong> a festive season, event or party?</h4>
+                    }>
+                </IconText>
             </section>
             <Divider />
 
             <section class = "project-section">
-                <h2 class="comfortaa">Primary Research</h2>
-                <h4>Our Primary Research used a <strong>triangulation approach</strong> to balance the weaknesses between each research method</h4>
+                <h3 class="comfortaa spaced-header">Primary Research</h3>
+                <h4 class ="spaced-header">Our Primary Research used a <strong>triangulation approach</strong> to balance the weaknesses between each research method</h4>
                 <div class="centered-image-container">
                     <img src={triangulation} alt="" class = "centered-image"></img>
                 </div>
@@ -200,9 +236,12 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
 
             <section class = "project-section">
                 <h4>And came across our problem statement</h4>
-                <h2>Key Findings</h2>
-                <h2>"Young people often experience post-event effects of nostalgia, emptiness and social fatigue. These feelings are exacerbated by common tendencies to suppress emotions or to be productive in the aftermath of these events.
-                    Despite the abundance of post-event recovery methods, there is still an existing struggle to debrief and preserve memories from events."</h2>
+                <h3>Key Findings</h3>
+                <h3>"Young people often experience post-event effects of nostalgia, 
+                    emptiness and social fatigue. These feelings are exacerbated by common 
+                    tendencies to suppress emotions or to be productive in the aftermath of these events.
+                    Despite the abundance of post-event recovery methods, there is still an existing 
+                    struggle to debrief and preserve memories from events."</h3>
             </section>
 
             <section class = "project-section">
