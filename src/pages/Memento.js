@@ -236,24 +236,27 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             </section>
 
             <section class = "project-section">
-                <div>
-                    <h4>With all the data we collated, we grouped our findings using Affinity Mapping.</h4>
+                <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+                    <span>
+                        <h4>With all the data we collated, we grouped our findings using Affinity Mapping.</h4>
+                        <br/>
+                        <ul className="list-disc pl-5">
+                            <li><h4><strong>167</strong> pieces of user data</h4></li>
+                            <li><h4><strong>16</strong> key insights</h4></li>
+                            <li><h4>Categorised into <strong>5</strong> overarching themes</h4></li>
+                        </ul>
+                        <br/>
+                        <h4>This allowed us to group <strong>common concepts</strong> and find <strong>themes</strong> in the experiences of young 
+                            people that we could <strong>refer back to</strong> throughout the design process.</h4>
+                    </span>
+                    
                     <CustomZoom
                         img = {researchAffinity}
                         alt = ""
                     />
                 </div>
             </section>
-
-            <section class = "project-section">
-                <h4>And came across our problem statement</h4>
-                <h3>Key Findings</h3>
-                <h3>"Young people often experience post-event effects of nostalgia, 
-                    emptiness and social fatigue. These feelings are exacerbated by common 
-                    tendencies to suppress emotions or to be productive in the aftermath of these events.
-                    Despite the abundance of post-event recovery methods, there is still an existing 
-                    struggle to debrief and preserve memories from events."</h3>
-            </section>
+            <Divider/>
 
             <section class = "project-section">
                 <h3 class="comfortaa text-center">Key User Insights</h3>
@@ -304,16 +307,46 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             </section>
 
             <section class = "project-section">
-                <h2>Our synthesis of the data</h2>
-                <h4>To gain a better understanding of our user base, we utilised a data sheet to group interviewees, which acted as a structure to the personas we developed as we derived characteristics from the clumps.</h4>
-                <CustomZoom
-                    img={datasheet}
-                    alt=""
-                />
+                <h4 className="spaced-header"><strong>To encapsulate all these findings we created the
+                    following problem statement</strong></h4>
+                <h3>"Young people often experience post-event effects of nostalgia, 
+                    emptiness and social fatigue. These feelings are exacerbated by common 
+                    tendencies to suppress emotions or to be productive in the aftermath of these events.
+                    Despite the abundance of post-event recovery methods, there is still an existing 
+                    struggle to debrief and preserve memories from events."</h3>
+            </section>
+
+
+            <section class = "project-section">
+                <h3 class="confortaa spaced-header">Synthesising the Data</h3>
+                <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+                    <span>
+                        <h4><strong>Persona Data Sheet</strong></h4>
+                        <h4>To gain a better understanding of our user base, we utilised a <strong>data sheet </strong>to group interviewees, 
+                            which acted as a structure to the personas we developed as we derived characteristics 
+                            from the clumps.</h4>
+                        <br/>
+                        <h4><strong>From Clumps to Personas</strong></h4>
+                        <h4>We identified <strong>two extroverted personas </strong>and <strong>one introverted persona </strong>based on shared 
+                            characteristics from our interviews. To refine our insights further, we categorized them by 
+                            their preferred event types—<strong>travel, concerts, or parties</strong>—reflecting the 
+                            experiences they spoke about most.</h4>
+                    </span>
+                    <CustomZoom
+                        img={datasheet}
+                        alt=""
+                    />
+                </div>
             </section>
             
             <section class = "project-section">
+                <h3 class="spaced-header confortaa">Meet our Personas</h3>
                 <CustomCarousel images={personaImages}/>
+                <h4><strong>User Journey Mapping</strong></h4>
+                <h4></h4>
+                <br/>
+                <h4><strong>Storyboarding</strong></h4>
+                <h4></h4>
             </section>
 
             <section class = "project-section">
