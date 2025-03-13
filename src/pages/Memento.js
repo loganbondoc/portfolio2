@@ -343,14 +343,15 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                 <h3 class="spaced-header confortaa">Meet our Personas</h3>
                 <CustomCarousel images={personaImages}/>
                 <h4><strong>User Journey Mapping</strong></h4>
-                <h4></h4>
+                <h4>We then used user journey mapping to break down <strong>key interactions </strong>and 
+                    identify <strong>pain points </strong>throughout the Post-Party process.</h4>
                 <br/>
                 <h4><strong>Storyboarding</strong></h4>
-                <h4></h4>
+                <h4>Storyboarding helped <strong>visualise </strong>real and potential user interactions, making it easier to 
+                <strong> spot issues </strong>and align <strong>design decisions </strong>early.</h4>
             </section>
 
             <section class = "project-section">
-                <h4>And developed a range of user journey maps and storyboards, to see how users were really feeling.</h4>
                 <CustomZoom
                     img = {chrisMap}
                     alt = ""
@@ -359,9 +360,31 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             </section>
 
             <section class = "project-section">
-                <h2>Concept Development</h2>
-                <h4>With each of us focusing in a particular persona, we employed the use of three ideation methods to individually generate multiple concepts.</h4>
+                <h3 className="comfortaa spaced-header">Development</h3>
+                <h4><strong>Ideation Process</strong></h4>
+                <h4>To generate a diverse range of solutions, our team explored ideas independently, each focusing 
+                    on a different persona and applying unique ideation methods. This approach allowed us to 
+                    address <strong>varying user needs </strong>and uncover a broader set of <strong>design possibilities.</strong></h4>
                 <CustomCarousel images={ideaImages}/>
+                <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+                    <span>
+                        <h4><strong>Decision Matrix</strong></h4>
+                        <h4>We used a decision matrix to evaluate each concept against <strong>key criteria, </strong>prioritizing 
+                            features based on the design brief, relevance to Post Party Effects, 
+                            and personal interest.</h4>
+                        <br/>
+                        <h4><strong>Results</strong></h4>
+                        <h4>Museum stood out for its <strong>media centralisation </strong>and <strong>event organisation, </strong>while Stash and 
+                            Memory faced accessibility and audience fit challenges. To address Museum’s 
+                            <strong> lack of creative liberty</strong>, we added Memory’s scrapbooking for creativity. We 
+                            also integrated Stash’s AI parallax effect for better post-event interactions, 
+                            making it more <strong>engaging </strong>for young partygoers.</h4>
+                    </span>
+                    <CustomZoom
+                        img={datasheet}
+                        alt=""
+                    />
+                </div>
             </section>
 
             <section class = "project-section">
