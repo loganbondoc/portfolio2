@@ -388,10 +388,30 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             </section>
 
             <section class = "project-section">
-                <h4>With each idea viewing Post-Party effects from such different perspectives, we used a decision matrix to assess each idea and extracted features to create our new concept Memento.
-                    Memento supports users throughout the entire event process
-                </h4>
+                <h4 className="spaced-header comfortaa">Meet Memento</h4>
+                <h4>With iterations to the design, Museum evolved into Memento, a platform designed for <strong>centralized 
+                    media sharing </strong>before, during, and after events. By introducing Memos, users can engage in 
+                    real-time interactions while fostering post-event reconnection through <strong>dynamic social features.</strong></h4>
                 <img src={mementoDiagram} alt="" class = "centered-image"></img>
+                <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+                    <span>
+                        <h4><strong>Moodboard & Branding</strong></h4>
+                        <h4>We used a decision matrix to evaluate each concept against <strong>key criteria, </strong>prioritizing 
+                            features based on the design brief, relevance to Post Party Effects, 
+                            and personal interest.</h4>
+                        <br/>
+                        <h4><strong>Results</strong></h4>
+                        <h4>Museum stood out for its <strong>media centralisation </strong>and <strong>event organisation, </strong>while Stash and 
+                            Memory faced accessibility and audience fit challenges. To address Museum’s 
+                            <strong> lack of creative liberty</strong>, we added Memory’s scrapbooking for creativity. We 
+                            also integrated Stash’s AI parallax effect for better post-event interactions, 
+                            making it more <strong>engaging </strong>for young partygoers.</h4>
+                    </span>
+                    <CustomZoom
+                        img={datasheet}
+                        alt=""
+                    />
+                </div>
             </section>
 
             <section class = "project-section">
