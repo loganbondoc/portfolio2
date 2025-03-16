@@ -236,7 +236,7 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
             </section>
 
             <section class = "project-section">
-                <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+                <div class="sidebyside">
                     <span>
                         <h4>With all the data we collated, we grouped our findings using Affinity Mapping.</h4>
                         <br/>
@@ -319,7 +319,7 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
 
             <section class = "project-section">
                 <h3 class="confortaa spaced-header">Synthesising the Data</h3>
-                <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+                <div class="sidebyside">
                     <span>
                         <h4><strong>Persona Data Sheet</strong></h4>
                         <h4>To gain a better understanding of our user base, we utilised a <strong>data sheet </strong>to group interviewees, 
@@ -359,7 +359,7 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                     on a different persona and applying unique ideation methods. This approach allowed us to 
                     address <strong>varying user needs </strong>and uncover a broader set of <strong>design possibilities.</strong></h4>
                 <CustomCarousel images={ideaImages}/>
-                <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+                <div class="sidebyside">
                     <span>
                         <h4><strong>Decision Matrix</strong></h4>
                         <h4>We used a decision matrix to evaluate each concept against <strong>key criteria, </strong>prioritizing 
@@ -386,7 +386,7 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                     media sharing </strong>before, during, and after events. By introducing Memos, users can engage in 
                     real-time interactions while fostering post-event reconnection through <strong>dynamic social features.</strong></h4>
                 <img src={mementoDiagram} alt="" class = "centered-image"></img>
-                <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+                <div class="sidebyside">
                     <span>
                         <h4><strong>Moodboard & Branding</strong></h4>
                         <h4>Originally, our primary colours were orange and blue, associated with <strong>optimism and warmth </strong>

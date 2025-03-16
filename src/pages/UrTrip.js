@@ -49,8 +49,8 @@ function UrTrip(){
             <Divider />
             
             <section class = "project-section">
-                <h2 class="spaced-header comfortaa">Low Engagement with Post-Booking Content</h2>
-                <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+                <h2 class="spaced-header comfortaa"><span class="urtrip-orange">Low Engagement </span>with Post-Booking Content</h2>
+                <div class="sidebyside">
                     <span>
                         <h4>Users find that generic post-booking content and upselling of accommodations often feels 
                             <strong>impersonal</strong> and <strong>disconnected </strong>from the user’s specific itinerary, 
@@ -67,7 +67,7 @@ function UrTrip(){
                         alt=""
                     />
                 </div>
-                <h3>An Opportunity</h3>
+                <h3>An <span class="urtrip-orange">Opportunity</span></h3>
                         <h4>Travel is supposed to be exciting! By offering <strong>personalised insights </strong>and 
                             <strong> tailored recommendations</strong>, these interactions could be transformed into valuable revenue 
                             streams that enhance the user experience.</h4>
@@ -76,7 +76,7 @@ function UrTrip(){
             <Divider />
 
             <section class = "project-section">
-                <h2 class="spaced-header comfortaa">Our Scope</h2>
+                <h2 class="spaced-header comfortaa">Our <span class="urtrip-orange">Scope</span></h2>
                 <h4>For our Minimum Viable Product (MVP), we focused on delivering a streamlined and impactful 
                     <strong> proof of concept </strong>that demonstrates the power of personalisation in the travel booking process. 
                     nstead of building a full-scale system, we prioritized essential elements that showcase 
@@ -110,13 +110,13 @@ function UrTrip(){
                     />
             </section>
             <section class="project-section">
-                <h2 class="spaced-header comfortaa">Our Prototype</h2>
+                <h2 class="spaced-header comfortaa">Our <span class="urtrip-orange">Prototype</span></h2>
             </section>
             <section class="project-section">
                 <h2 class="spaced-header comfortaa">Introducing UrTrip</h2>
             </section>
             <section class="project-section">
-                <h2 class="spaced-header comfortaa">Potential Concerns</h2>
+                <h2 class="spaced-header comfortaa">Potential <span class="urtrip-orange">Concerns</span></h2>
                 <h4>AI-powered personalisation enhances the travel experience, but <strong>transparency and ethical responsibility </strong>
                     are critical to maintaining user trust. Our approach prioritises <strong>clarity and fairness</strong>, ensuring that 
                     users understand how AI influences their journey while safeguarding against bias.</h4>
