@@ -23,9 +23,12 @@ import memory from '../images/memento/artefacts/memory_infographic.png';
 import stash from '../images/memento/artefacts/stash_infographic.png';
 import museum from '../images/memento/artefacts/museum_infographic.png';
 
+// Synthesis Images
+import chrisStory from '../images/memento/artefacts/chris_storyboard.png';
+import chrisMap from '../images/memento/artefacts/chris_journey_map.png';
+
 // Images
 import mementoBanner from '../images/memento/memento_banner.png';
-
 import triangulation from '../images/memento/triangulation.png';
 import sus from '../images/memento/sus.png';
 import thinkAloud from '../images/memento/think-aloud.png';
@@ -35,8 +38,6 @@ import datasheet from '../images/memento/datasheet.png';
 import chris from '../images/memento/chris.png';
 import mary from '../images/memento/mary.png';
 import tanya from '../images/memento/tanya.png';
-import chrisMap from '../images/memento/chris_map.png';
-import chrisStory from '../images/memento/chris_storyboard.png';
 import maryStory from '../images/memento/mary_storyboard.png';
 import tanyaStory from '../images/memento/tanya_storyboard.png';
 import wireframe1 from '../images/memento/wireframe_1.png';
@@ -92,8 +93,7 @@ function Memento() {
 
     const storyImages =[
         chrisStory,
-        maryStory,
-        tanyaStory,
+        chrisMap,
     ]
 
     const wireframeImages = [
@@ -349,13 +349,6 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                 <h4><strong>Storyboarding</strong></h4>
                 <h4>Storyboarding helped <strong>visualise </strong>real and potential user interactions, making it easier to 
                 <strong> spot issues </strong>and align <strong>design decisions </strong>early.</h4>
-            </section>
-
-            <section class = "project-section">
-                <CustomZoom
-                    img = {chrisMap}
-                    alt = ""
-                />
                 <CustomCarousel images={storyImages}/>
             </section>
 
@@ -396,16 +389,8 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                 <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
                     <span>
                         <h4><strong>Moodboard & Branding</strong></h4>
-                        <h4>We used a decision matrix to evaluate each concept against <strong>key criteria, </strong>prioritizing 
-                            features based on the design brief, relevance to Post Party Effects, 
-                            and personal interest.</h4>
-                        <br/>
-                        <h4><strong>Results</strong></h4>
-                        <h4>Museum stood out for its <strong>media centralisation </strong>and <strong>event organisation, </strong>while Stash and 
-                            Memory faced accessibility and audience fit challenges. To address Museum’s 
-                            <strong> lack of creative liberty</strong>, we added Memory’s scrapbooking for creativity. We 
-                            also integrated Stash’s AI parallax effect for better post-event interactions, 
-                            making it more <strong>engaging </strong>for young partygoers.</h4>
+                        <h4>Originally, our primary colours were orange and blue, associated with <strong>optimism and warmth </strong>
+                            , which encourages users in their Post Event phase.</h4>
                     </span>
                     <CustomZoom
                         img={datasheet}
@@ -413,6 +398,7 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
                     />
                 </div>
             </section>
+            <Divider/>
 
             <section class = "project-section">
                 <div class = "centered-image-container">
@@ -422,19 +408,24 @@ As psychoanalyst F. Diane Barth points out, there's often a surge of exhilaratio
 
             <section class = "project-section">
                 <h2>Wireframes</h2>
-                <h4>With all our features established, we laid out how they would be translated to a screen setting using wireframes. This would provide a base layout, with usability and ethical considerations being the main focus of this phase.</h4>
+                <h4>With all our features established, we laid out how they would be translated to a screen setting 
+                    using wireframes. This would provide a base layout, with usability and ethical considerations 
+                    being the main focus of this phase.</h4>
                 <CustomCarousel images={wireframeImages}/>
             </section>
 
             <section class = "project-section">
                 <h2>Mid-Fi Prototypes</h2>
-                <h4>After gathering informal peer feedback, we began to further refine our designs. Giving the prototypes basic functionality as well as clarifying critical information.</h4>
+                <h4>After gathering informal peer feedback, we began to further refine our designs. Giving the 
+                    prototypes basic functionality as well as clarifying critical information.</h4>
                 <CustomCarousel images={midfiImages}/>
             </section>
 
             <section class = "project-section">
                 <h2>User Testing Round 1</h2>
-                <h4>The first round of user testing, was completed utilising an iterative process. By making small adjustments between testing methods, we ensured that the glaring issues wouldn’t be repeated by subsequent participants</h4>
+                <h4>The first round of user testing, was completed utilising an iterative process. By making 
+                    small adjustments between testing methods, we ensured that the glaring issues wouldn’t be 
+                    repeated by subsequent participants</h4>
                 <div>
                     <div class = "top-bottom-container">
                         <CustomZoom
