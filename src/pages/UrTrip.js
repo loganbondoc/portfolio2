@@ -53,7 +53,7 @@ function UrTrip(){
                 <div class="sidebyside">
                     <span>
                         <h4>Users find that generic post-booking content and upselling of accommodations often feels 
-                            <strong>impersonal</strong> and <strong>disconnected </strong>from the user’s specific itinerary, 
+                            <strong> impersonal</strong> and <strong>disconnected </strong>from the user’s specific itinerary, 
                             resulting in <strong>low engagement </strong>and <strong>missed revenue </strong>opportunities.</h4>
                         <br/>
                         <h4> Trip.com’s post-purchase page serves as one example of a common experience across booking platforms, 
