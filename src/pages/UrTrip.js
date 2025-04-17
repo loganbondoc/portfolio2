@@ -13,6 +13,11 @@ import {Divider} from "@heroui/divider";
 // Background info Images
 import lowEngagement from '../images/urtrip/background_info/low_engagement.png';
 
+//Prototype Images
+import theProcess from '../images/urtrip/prototype/the_process.png';
+import figmaPrototype from '../images/urtrip/prototype/figma_prototype.png';
+import introducingUrTrip from '../images/urtrip/prototype/introducing_urtrip.png';
+
 // Icons
 import flightsIcon from '../images/urtrip/icons/flights_icon.png';
 import impactIcon from '../images/urtrip/icons/impact_icon.png';
@@ -25,7 +30,7 @@ function UrTrip(){
         <div class = "project-background">
             
             <section class = "project-section">
-            <div className="banner-container">
+                <div className="banner-container">
                     <img src={urTripBanner} alt="" className="banner"></img>
                 </div>
             </section>
@@ -109,12 +114,80 @@ function UrTrip(){
                         </h4>}
                     />
             </section>
+            
             <section class="project-section">
                 <h2 class="spaced-header comfortaa">Our <span class="urtrip-orange">Prototype</span></h2>
+                <h4><strong>AI Personalisation Prototype</strong></h4>
+                <h4>The functional prototype of UrTrip was built in Python and utilised three different forms of technology.</h4>
+
+                <div className="max-w-6xl mx-auto text-center">
+
+                    {/* Cards Row */}
+                    <div className="flex flex-col lg:flex-row justify-center items-start gap-8 lg:divide-x divide-gray-300">
+                    {/* Amadeus */}
+                    <div className="flex-1 px-6 text-center">
+                        <img src={personaIcon} alt="Amadeus Icon" className="mx-auto mb-4 h-8" />
+                        <h4 className="font-semibold text-lg mb-1">Amadeus API</h4>
+                        <p className="text-gray-600 text-sm">
+                        Limited testing version of API was used to retrieve hotels and activities within a certain radius
+                        </p>
+                    </div>
+
+                    {/* WordWare */}
+                    <div className="flex-1 px-6 text-center">
+                        <img src={personaIcon} alt="WordWare Icon" className="mx-auto mb-4 h-8" />
+                        <h4 className="text-gray-900 font-semibold text-lg mb-1">2x WordWare Agents</h4>
+                        <p className="text-gray-600 text-sm">
+                        One WordWare agent extracted and interpreted personal travel information<br/>
+                        Other agent refined hotel search filters based on user preferences
+                        </p>
+                    </div>
+
+                    {/* Streamlit */}
+                    <div className="flex-1 px-6 text-center">
+                        <img src={personaIcon} alt="Streamlit Icon" className="mx-auto mb-4 h-8" />
+                        <h4 className="text-gray-900 font-semibold text-lg mb-1">Streamlit Framework</h4>
+                        <p className="text-gray-600 text-sm">
+                        Provided graphical interface to select personas<br/>
+                        Displayed AI Agent output to user
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <h4 class="spaced-header">The functionality looked similar to this:</h4>
+                <div className="banner-container">
+                    <img src={theProcess} alt="" className="banner"></img>
+                </div>
+                <div class="sidebyside">
+                    <span>
+                        <h4><strong>Front-End Mockups</strong></h4>
+                        <br/>
+                        <h4>A Figma prototype was iteratively developed alongside the backend, beginning with wireframes 
+                            to establish <strong>layouts</strong> and <strong>design patterns</strong>. Internal reviews refined the high-fidelity mock-ups to 
+                            create a polished, responsive, user-centric interface.</h4>
+                        <br/>
+                        <a src="">View Figma Prototype</a>
+                    </span>
+                    <CustomZoom
+                        img={figmaPrototype}
+                        alt=""
+                    />
+                </div>
             </section>
+
+            <Divider />
+
             <section class="project-section">
-                <h2 class="spaced-header comfortaa">Introducing UrTrip</h2>
+                <div className="banner-container">
+                    <img src={introducingUrTrip} alt="" className="banner"></img>
+                </div>
             </section>
+
+            <section class="project-section">
+                <h4 class="spaced-header">For this demonstration, we will show off two different personas travelling to <strong>New 
+                York City </strong>and compare how UrTrip <strong>personalises</strong> their travel information and recommendations.</h4>
+            </section>
+
             <section class="project-section">
                 <h2 class="spaced-header comfortaa">Potential <span class="urtrip-orange">Concerns</span></h2>
                 <h4>AI-powered personalisation enhances the travel experience, but <strong>transparency and ethical responsibility </strong>
@@ -139,8 +212,21 @@ function UrTrip(){
                     </h4>}
                 />
             </section>
+            <section class="project-section">
+                <h2 class="spaced-header comfortaa">Future <span class="urtrip-orange">Steps</span></h2>
+                <h4>UrTrip is a proof of concept that demonstrates the potential of AI personalisation in travel. 
+                    Future iterations could explore additional touchpoints, such as pre-booking and post-booking, 
+                    to further enhance user engagement and satisfaction.</h4>
+            </section>
+            <section class="project-section">
+                <h2 class="spaced-header comfortaa">My Learnings</h2>
+                <h4>For example, during testing, we identified a case where the AI misrepresented a Chinese American traveler, reinforcing cultural assumptions rather than reflecting their unique background. This issue is an industry-wide challenge, as large language models operate on probabilistic reasoning, sometimes leading to oversimplifications. 
+While we’ve taken steps to mitigate bias, stereotyping remains an evolving challenge in AI. Our team is committed to continuous improvement, refining our approach to create a more inclusive and accurate personalisation system.
+By prioritising transparency, user choice, and bias reduction, we ensure that AI personalisation enhances rather than misrepresents user experiences. 🚀</h4>
+            </section>
         </div>
-    );
+        
+);
 }
 
 export default UrTrip;
