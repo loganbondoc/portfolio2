@@ -33,6 +33,10 @@ import cognitiveWalkthroughIcon from '../images/memento/icons/cognitive_icon.png
 import cogOverloadIcon from '../images/memento/icons/overload_icon.png';
 import personalisationIcon from '../images/memento/icons/personalisation_icon.png';
 
+// Learnings Images
+import fileOrganisation from '../images/memento/icons/file_icon.png';
+import componentUsage from '../images/memento/icons/component_icon.png';
+
 // Images
 import mementoBanner from '../images/memento/memento_banner.png';
 import triangulation from '../images/memento/triangulation.png';
@@ -555,8 +559,6 @@ function Memento() {
                         />
                     </span>
                 </div>
-
-
             </section>
 
             <section class="project-section">
@@ -566,7 +568,10 @@ function Memento() {
 
             <section class="project-section">
                 <h2>Memento's Design Crisis</h2>
-                <p class="text-md">User feedback from Think-Aloud testing revealed a <strong>major branding misalignment</strong>. The original color scheme, meant to feel warm and optimistic, instead gave off an <strong>"outdated grandma feel"</strong>, missing the mark for our young audience. To fix this, we completely reworked Memento’s branding. We shifted to a high-contrast black-and-white palette with bright blue and green accents, embracing an <strong>early 2000s aesthetic</strong> that resonates with our users. Lowercase headings and increased emoji use added a more casual, playful tone, making the app feel modern, relatable, and fun.</p>
+                <p class="text-md">User feedback from Think-Aloud testing revealed a <strong>major branding misalignment</strong>. The original color scheme, meant to feel warm and optimistic, instead gave off an <strong>"outdated grandma feel"</strong>, missing the mark for our young audience.
+                </p>
+                <br />
+                <p>To fix this, we completely reworked Memento’s branding. We shifted to a high-contrast black-and-white palette with bright blue and green accents, embracing an <strong>early 2000s aesthetic</strong> that resonates with our users. Lowercase headings and increased emoji use added a more casual, playful tone, making the app feel modern, relatable, and fun.</p>
                 <div class="centered-image-container">
                     <CustomZoom
                         img={transformation}
@@ -577,43 +582,49 @@ function Memento() {
 
             <section class="project-section">
                 <h2>User Testing Round 2</h2>
-                <h4>With our interactive mockup, we conducted testing on experts using Heuristic Evaluations and tested with general users with Think Aloud tasks.</h4>
-                <div>
-                    <div class="top-bottom-container">
-                        <CustomZoom
-                            img={thinkAloudIcon}
-                            alt=""
-                        />
-                        <h4>Heuristic Evaluations</h4>
-                        <h4>Was first conducted on 5 general users to identify any glaring usability issues. Easily adjustable issues were addressed within this phase</h4>
-                    </div>
-                    <div class="top-bottom-container">
+                <p class="text-md">For the second round of user testing,  <strong>14 key features</strong> of Memento were divided among <strong>4 user testing sessions</strong>. Specific features such as “Filter by Faces” and “Create Event” were tested within <strong>multiple</strong> testing sessions for the purpose of gaining deeper insights.</p>
+                <div class="sidebyside">
+                    <span>
+                        <h4><strong>Heuristic Evaluations</strong></h4>
+                        <p class="text-md">This approach allowed us to collect qualitative insights through user self-reporting and discussions while also gathering quantitative severity ratings (0-4) to assess usability issues. These findings not only informed whether Memento was ready for release but also guided our synthesis and iteration process to refine the platform.</p>
+                    </span>
+                    <span>
                         <CustomZoom
                             img={cognitiveWalkthroughIcon}
                             alt=""
                         />
-                        <h4>Loop 11 Walkthroughs</h4>
-                        <h4>Conducted on 10 experts to identify</h4>
-                    </div>
+                    </span>
+                </div>
+                <div class="sidebyside">
+                    <span>
+                        <h4><strong>Loop11 Unmoderated Testing</strong></h4>
+                        <p class="text-md">This approach allowed us to collect qualitative insights through user self-reporting and discussions while also gathering quantitative severity ratings (0-4) to assess usability issues. These findings not only informed whether Memento was ready for release but also guided our synthesis and iteration process to refine the platform.</p>
+                    </span>
+                    <span>
+                        <CustomZoom
+                            img={cognitiveWalkthroughIcon}
+                            alt=""
+                        />
+                    </span>
                 </div>
             </section>
 
             <section class="project-section">
                 <h2>More iterations</h2>
                 <h4>Through the extensive testing conducted on our interactive prototype, we had made 18 changes, big and small, to Memento. The most notable however was users who struggled to navigate a clustered event page:</h4>
-                <div>
-                    <div>
+                <div class="sidebyside">
+                    <span>
                         <h4>Latch Principle</h4>
                         <h4>
                             To address this, we utilised the LATCH Principle, which organises sorts data by either: Location, Alphabet, Time, Category and Heirachy. Hence, we implemented it through the a new sorting and filter dropdown, which allowed users to sort memos by time and filter by category of the memo (ie. notes, polls, links).
                         </h4>
-                    </div>
-                    <div>
+                    </span>
+                    <span>
                         <CustomZoom
                             img={latch}
                             alt=""
                         />
-                    </div>
+                    </span>
                 </div>
             </section>
 
@@ -624,6 +635,20 @@ function Memento() {
 
             <section class="project-section">
                 <h2>Learnings</h2>
+                <IconText
+                    img={fileOrganisation}
+                    title={<h4><strong>The necessity of File Organisation</strong></h4>}
+                    description={
+                        <p class="text-md">We encountered challenges locating and updating assets throughout development. Establishing a clear design system early on would have made components, variants, and styles easier to manage and iterate on.</p>
+                    }
+                />
+                <IconText
+                    img={componentUsage}
+                    title={<h4><strong>Component Usage</strong></h4>}
+                    description={
+                        <p class="text-md">In early iterations, reused assets weren’t made into components, making updates time-consuming. Structuring each version on separate pages and using component instances, especially for interactions would have reduced clutter and streamlined the workflow.</p>
+                    }
+                />
             </section>
         </div>
     );
