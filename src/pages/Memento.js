@@ -614,7 +614,7 @@ function Memento() {
                 <h4>Through the extensive testing conducted on our interactive prototype, we had made 18 changes, big and small, to Memento. The most notable however was users who struggled to navigate a clustered event page:</h4>
                 <div class="sidebyside">
                     <span>
-                        <h4>Latch Principle</h4>
+                        <h4><strong>Latch Principle</strong></h4>
                         <h4>
                             To address this, we utilised the LATCH Principle, which organises sorts data by either: Location, Alphabet, Time, Category and Heirachy. Hence, we implemented it through the a new sorting and filter dropdown, which allowed users to sort memos by time and filter by category of the memo (ie. notes, polls, links).
                         </h4>
@@ -629,8 +629,44 @@ function Memento() {
             </section>
 
             <section class="project-section">
-                <h2>Meet Memento</h2>
-                <h4> Why just reminisce about events when can relive them, prolong them and anticipate future ones?</h4>
+                <h2>Introducing Memento</h2>
+                <p>Why just reminisce about events when can relive them, prolong them and anticipate future ones?</p>
+                <div class="sidebyside">
+                    <span>
+                        <h4><strong>Invite</strong></h4>
+                        <p>Build the hype by inviting friends and family into your Memento. Set the stage and start the countdown to your next big event.</p>
+                    </span>
+                    <span>
+                        <img></img>
+                    </span>
+                </div>
+                <div class="sidebyside">
+                    <span>
+                        <h4><strong>Share the Moment</strong></h4>
+                        <p>Polls, playlists, photos, videos, and more. All in one place for everyone to enjoy.</p>
+                    </span>
+                    <span>
+                        <img></img>
+                    </span>
+                </div>
+                <div class="sidebyside">
+                    <span>
+                        <h4><strong>React</strong></h4>
+                        <p>Keep the good vibes going during and after an event by reacting to posts and showing some love. With our ReactMoji feature, respond to memos using real-time photos of yourself for a more personal touch.</p>
+                    </span>
+                    <span>
+                        <img></img>
+                    </span>
+                </div>
+                <div class="sidebyside">
+                    <span>
+                        <h4><strong>Relive the Night</strong></h4>
+                        <p>Hold onto your memories in an AI generated time capsule slideshow. Packed with highlights, stats, and unforgettable moments, all curated just for you.</p>
+                    </span>
+                    <span>
+                        <img></img>
+                    </span>
+                </div>
             </section>
 
             <section class="project-section">
