@@ -37,6 +37,11 @@ import personalisationIcon from '../images/memento/icons/personalisation_icon.pn
 import fileOrganisation from '../images/memento/icons/file_icon.png';
 import componentUsage from '../images/memento/icons/component_icon.png';
 
+// Showcase Gifs
+import shareGif from '../images/memento/gifs/share.gif';
+import reliveGif from '../images/memento/gifs/relive.gif';
+import mojiGif from '../images/memento/gifs/moji.gif';
+
 // Images
 import mementoBanner from '../images/memento/memento_banner.png';
 import triangulation from '../images/memento/triangulation.png';
@@ -628,43 +633,45 @@ function Memento() {
                 </div>
             </section>
 
-            <section class="project-section">
+            <section class="bg-black text-white width-full">
                 <h2>Introducing Memento</h2>
                 <p>Why just reminisce about events when can relive them, prolong them and anticipate future ones?</p>
-                <div class="sidebyside">
-                    <span>
+                <div class="showcase-gif">
+                    <span class="flex flex-col justify-center text-left h-full">
                         <h4><strong>Invite</strong></h4>
-                        <p>Build the hype by inviting friends and family into your Memento. Set the stage and start the countdown to your next big event.</p>
+                        <p>
+                            Build the hype by inviting friends and family into your Memento. Set the stage and start the countdown to your next big event.
+                        </p>
                     </span>
                     <span>
-                        <img></img>
+                        <img src={shareGif} />
                     </span>
                 </div>
-                <div class="sidebyside">
-                    <span>
+                <div class="showcase-gif">
+                    <span class="flex flex-col justify-center text-left h-full">
                         <h4><strong>Share the Moment</strong></h4>
                         <p>Polls, playlists, photos, videos, and more. All in one place for everyone to enjoy.</p>
                     </span>
                     <span>
-                        <img></img>
+                        <img src={shareGif} />
                     </span>
                 </div>
-                <div class="sidebyside">
-                    <span>
+                <div class="showcase-gif">
+                    <span class="flex flex-col justify-center text-left h-full">
                         <h4><strong>React</strong></h4>
                         <p>Keep the good vibes going during and after an event by reacting to posts and showing some love. With our ReactMoji feature, respond to memos using real-time photos of yourself for a more personal touch.</p>
                     </span>
                     <span>
-                        <img></img>
+                    <img src={mojiGif} />
                     </span>
                 </div>
-                <div class="sidebyside">
-                    <span>
+                    <div class="showcase-gif">
+                    <span class="flex flex-col justify-center text-left h-full">
                         <h4><strong>Relive the Night</strong></h4>
                         <p>Hold onto your memories in an AI generated time capsule slideshow. Packed with highlights, stats, and unforgettable moments, all curated just for you.</p>
                     </span>
                     <span>
-                        <img></img>
+                    <img src={reliveGif} />
                     </span>
                 </div>
             </section>

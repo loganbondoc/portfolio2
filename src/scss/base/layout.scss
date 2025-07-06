@@ -2,6 +2,10 @@
     @apply max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10;
 }
 
+.showcase-gif {
+  @apply max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center py-16;
+}
+
 .title-section {
     @apply max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 px-6 py-20 bg-[#1000ff] text-white;
   }
