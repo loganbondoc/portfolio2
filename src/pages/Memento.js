@@ -41,6 +41,7 @@ import componentUsage from '../images/memento/icons/component_icon.png';
 import shareGif from '../images/memento/gifs/share.gif';
 import reliveGif from '../images/memento/gifs/relive.gif';
 import mojiGif from '../images/memento/gifs/moji.gif';
+import inviteGif from '../images/memento/gifs/invite.gif';
 
 // Images
 import mementoBanner from '../images/memento/memento_banner.png';
@@ -88,6 +89,7 @@ import CustomCarousel from '../components/CustomCarousel.js';
 import Carousel from 'react-bootstrap/Carousel';
 import CustomZoom from '../components/CustomZoom.js';
 import InfoItem from "../components/InfoItem";
+import EmblaCarousel from '../components/EmblaCarousel.jsx';
 
 function Memento() {
     // useEffect(() => {
@@ -380,7 +382,8 @@ function Memento() {
 
             <section class="project-section">
                 <h3 class="spaced-header confortaa">Meet our Personas</h3>
-                <CustomCarousel images={personaImages} />
+                {/* <CustomCarousel images={personaImages} /> */}
+                <EmblaCarousel slides={personaImages} options={{dragFree: true, loop: true}}/>
                 <h4><strong>User Journey Mapping</strong></h4>
                 <h4>We then used user journey mapping to break down <strong>key interactions </strong>and
                     identify <strong>pain points </strong>throughout the Post-Party process.</h4>
@@ -388,7 +391,8 @@ function Memento() {
                 <h4><strong>Storyboarding</strong></h4>
                 <h4>Storyboarding helped <strong>visualise </strong>real and potential user interactions, making it easier to
                     <strong> spot issues </strong>and align <strong>design decisions </strong>early.</h4>
-                <CustomCarousel images={storyImages} />
+                {/* <CustomCarousel images={storyImages} /> */}
+                <EmblaCarousel slides={storyImages} options={{dragFree: true, loop: true}}/>
             </section>
 
             <section class="project-section">
@@ -397,7 +401,8 @@ function Memento() {
                 <h4>To generate a diverse range of solutions, our team explored ideas independently, each focusing
                     on a different persona and applying unique ideation methods. This approach allowed us to
                     address <strong>varying user needs </strong>and uncover a broader set of <strong>design possibilities.</strong></h4>
-                <CustomCarousel images={ideaImages} />
+                {/* <CustomCarousel images={ideaImages} /> */}
+                <EmblaCarousel slides={ideaImages} options={{dragFree: true, loop: true}}/>
                 <div class="sidebyside">
                     <span>
                         <h4><strong>Decision Matrix</strong></h4>
@@ -450,14 +455,16 @@ function Memento() {
                 <h4>With all our features established, we laid out how they would be translated to a screen setting
                     using wireframes. This would provide a base layout, with usability and ethical considerations
                     being the main focus of this phase.</h4>
-                <CustomCarousel images={wireframeImages} />
+                {/* <CustomCarousel images={wireframeImages} /> */}
+                <EmblaCarousel slides={wireframeImages} options={{dragFree: true, loop: true}}/>
             </section>
 
             <section class="project-section">
                 <h2>Mid-Fi Prototypes</h2>
                 <h4>After gathering informal peer feedback, we began to further refine our designs. Giving the
                     prototypes basic functionality as well as clarifying critical information.</h4>
-                <CustomCarousel images={midfiImages} />
+                {/* <CustomCarousel images={midfiImages} /> */}
+                <EmblaCarousel slides={midfiImages} options={{dragFree: true, loop: true}}/>
             </section>
 
             <section class="project-section">
@@ -568,7 +575,8 @@ function Memento() {
 
             <section class="project-section">
                 <h2>Hi-Fi Prototypes</h2>
-                <CustomCarousel images={hifiImages} />
+                {/* <CustomCarousel images={hifiImages} /> */}
+                <EmblaCarousel slides={hifiImages} options={{dragFree: true, loop: true }}/>
             </section>
 
             <section class="project-section">
@@ -644,7 +652,7 @@ function Memento() {
                         </p>
                     </span>
                     <span>
-                        <img src={shareGif} />
+                        <img src={inviteGif} />
                     </span>
                 </div>
                 <div class="showcase-gif">
@@ -692,7 +700,7 @@ function Memento() {
                         <p class="text-md">In early iterations, reused assets weren’t made into components, making updates time-consuming. Structuring each version on separate pages and using component instances, especially for interactions would have reduced clutter and streamlined the workflow.</p>
                     }
                 />
-            </section>
+            </section>        
         </div>
     );
 }
