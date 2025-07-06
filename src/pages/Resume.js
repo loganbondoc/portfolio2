@@ -6,9 +6,9 @@ function Resume(){
         <div>
             <section class = "project-section">
             <span class ="resume-img">
-                    <div>
+                    {/* <div>
                         <img src={homeArt} ></img>
-                    </div>
+                    </div> */}
                 </span>
                 <h1>Logan Bondoc</h1>
                 <h2>UX Designer & Front-End Developer</h2>

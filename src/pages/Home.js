@@ -63,7 +63,7 @@ function Home() {
   return (
     <div className="relative min-h-screen">
       {/* 🔵 Parallax Background Inside Home Page (Not Affecting Other Pages) */}
-      <div className="absolute inset-0 overflow-hidden z-0">
+      {/* <div className="absolute inset-0 overflow-hidden z-0">
       <motion.div
         className="fixed inset-0 w-full min-h-[200vh] pointer-events-none z-0"
         style={{
@@ -74,7 +74,7 @@ function Home() {
           y: smoothYTransform, // Moves the background at a slower speed
         }}
     ></motion.div>
-      </div>
+      </div> */}
 
       {/* 🔹 Your Existing Layout (Unchanged) */}
       <div className="relative z-10">

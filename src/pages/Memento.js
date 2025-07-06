@@ -136,22 +136,22 @@ function Memento() {
 
     return (
         <div>
-            <section class="project-section">
-                <img src={mementoBanner} alt="" class="rounded-2xl"></img>
+            <section class="project-section centered-image-container">
+                <img src={mementoBanner} alt="" class="rounded-2xl centered-image"></img>
             </section>
 
             <section class="project-section grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <h3 class="text-lg">Overview</h3>
-                    <p class="text-md">
+                    <h3 class="header">Overview</h3>
+                    <p>
                         For a class project on the theme of Lifestyle our team tackled the post-party blues, a relatable, emotional dip many young people face. We designed a mobile app to help users reconnect, reflect, and ease the comedown after social events.
                     </p>
                 </div>
 
                 <div class="flex flex-col gap-4">
                     <div>
-                        <h3 class="text-md text-gray-600">Role</h3>
-                        <p class="text-md text-gray-600">
+                        <h3 class="">Role</h3>
+                        <p class="text-gray-600">
                             Product Designer: User Research, Interaction, Visual design, Prototyping & Testing
                         </p>
                     </div>
@@ -688,7 +688,7 @@ function Memento() {
                 <h2>Learnings</h2>
                 <IconText
                     img={fileOrganisation}
-                    title={<h4><strong>The necessity of File Organisation</strong></h4>}
+                    title={<h4><strong>The Necessity of File Organisation</strong></h4>}
                     description={
                         <p class="text-md">We encountered challenges locating and updating assets throughout development. Establishing a clear design system early on would have made components, variants, and styles easier to manage and iterate on.</p>
                     }
