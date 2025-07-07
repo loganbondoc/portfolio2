@@ -22,7 +22,7 @@ import clutterIcon from '../images/portfolio/clutter_icon.png';
 import messyIcon from '../images/portfolio/messy_icon.png';
 import components from '../images/portfolio/components.png';
 import materialise from '../images/portfolio/materialise.png';
-import demo1 from '../images/portfolio/portfolio_FINAL_1.gif';
+import demo1 from '../images/portfolio/optimised.gif';
 import thematic from '../images/portfolio/thematic.png';
 import workshops from '../images/portfolio/workshops.png';
 import lessIcon from '../images/portfolio/less_icon.png';
