@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {Divider} from "@heroui/divider";
+import { Divider } from "@heroui/divider";
 import logo from '../images/lb_logo 2.0.svg';
 import {
-  Navbar, 
-  NavbarBrand, 
-  NavbarContent, 
-  NavbarItem, 
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem
@@ -33,31 +33,31 @@ function Nav() {
     //   </ul>
     // </nav>
     <Navbar shouldHideOnScroll className="w-full flex items-center px-8 py-3 bg-transparent">
-    {/* Left: Logo */}
-    <Link to={`/`}>
-      <NavbarBrand className="flex-none">
-        <img src={logo} alt="Logo" className="h-12 w-auto" />
-      </NavbarBrand>
-    </Link>
-  
-    {/* Middle: Divider (Expands Fully) */}
-    <div className="flex-1 mx-6">
-      <Divider className="border-gray-400" />
-    </div>
-  
-    {/* Right: Navbar Links (Sticks to the Right) */}
-    <NavbarContent className="flex flex-none justify-end space-x-6">
-      <NavbarItem>
-        <Link to="/resume" className="text-lg hover:text-primary">Resume</Link>
-      </NavbarItem>
-      <NavbarItem>
-        <a href="./#CurrentWorks" className="text-lg hover:text-primary">Works</a>
-      </NavbarItem>
-      <NavbarItem>
-        <a href="mailto:loganbondoc@gmail.com" className="text-lg hover:text-primary">Contact</a>
-      </NavbarItem>
-    </NavbarContent>
-  </Navbar>
+      {/* Left: Logo */}
+      <Link to={`/`}>
+        <NavbarBrand className="flex-none">
+          <img src={logo} alt="Logo" className="h-12 w-auto" />
+        </NavbarBrand>
+      </Link>
+
+      {/* Middle: Divider (Expands Fully) */}
+      <div className="flex-1 mx-6">
+        <Divider className="border-gray-400" />
+      </div>
+
+      {/* Right: Navbar Links (Sticks to the Right) */}
+      <NavbarContent className="flex flex-none justify-end space-x-6">
+        <NavbarItem>
+          <a href="./#CurrentWorks" className="text-lg hover:text-primary">Works</a>
+        </NavbarItem>
+        <NavbarItem>
+          <Link to="/resume" className="text-lg hover:text-primary">Resume</Link>
+        </NavbarItem>
+        <NavbarItem>
+          <a href="mailto:loganbondoc@gmail.com" className="text-lg hover:text-primary">Contact</a>
+        </NavbarItem>
+      </NavbarContent>
+    </Navbar>
 
 
 

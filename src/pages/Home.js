@@ -83,7 +83,6 @@ function Home() {
           <span className="intro-text">
             <h1 className="blue-txt comfortaa">Hello!</h1>
             <h1 className="comfortaa">I'm Logan Bondoc</h1>
-            <div className="blue-line"></div>
           </span>
           <span className="home-img">
             <div>
