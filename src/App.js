@@ -13,6 +13,7 @@ import Portfolio from "./pages/Portfolio.js"
 import UrTrip from "./pages/UrTrip.js"
 import Resume from "./pages/Resume.js"
 import Footer from "./components/Footer.js"
+import PathwayCabinet from "./pages/PathwayCabinet.js"
 
 //Components
 
@@ -50,6 +51,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/urtrip" element={<UrTrip />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="/pathwaycabinet" element={<PathwayCabinet />} />
           </Routes>
 
           {/* Footer */}
