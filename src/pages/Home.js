@@ -13,6 +13,7 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 // components
 import ShowReelWork from "../components/WorkShowReel";
+import LandingPage from "../components/LandingPage";
 
 // showreel videos
 import mementoShowreel from "../videos/memento_showreel.mp4";
@@ -85,42 +86,32 @@ function Home() {
     ></motion.div>
       </div> */}
 
-      {/* 🔹 Your Existing Layout (Unchanged) */}
-      <div className="relative z-10">
-        {/* Intro Section */}
-        <div className="project-section intro">
-          <span className="intro-text">
-            <h1 className="blue-txt comfortaa">Hello!</h1>
-            <h1 className="comfortaa">I'm Logan Bondoc</h1>
-          </span>
-          <span className="home-img">
-            <div>
-              <img src={homeArt} alt="Home Art" />
-            </div>
-          </span>
+      <LandingPage>
+        <div className="flex flex-col items-center gap-20 py-20">
+          <ShowReelWork
+            videoSrc={mementoShowreel}
+            topText="[UX Case Study]"
+            title="Memento"
+            subtitle="Addressing Post Party Blues"
+            linkTo="/memento"
+          />
+          <ShowReelWork
+            videoSrc={pathwayCabinetShowreel}
+            topText="[UX Case Study]"
+            title="Pathway Cabinet"
+            subtitle="Play a path to find your way"
+            linkTo="/pathwaycabinet"
+          />
+          <ShowReelWork
+            videoSrc={urTripShowreel}
+            topText="[AI / Development]"
+            title="UrTrip"
+            subtitle="Making travel planning more personal"
+            linkTo="/urtrip"
+          />
         </div>
-      </div>
-      <ShowReelWork
-        videoSrc={mementoShowreel}
-        topText="[UX Case Study]"
-        title="Memento"
-        subtitle="Addressing Post Party Blues"
-        linkTo="/memento"
-      />
-      <ShowReelWork
-        videoSrc={pathwayCabinetShowreel}
-        topText="[UX Case Study]"
-        title="Pathway Cabinet"
-        subtitle="Play a path to find your way"
-        linkTo="/pathwaycabinet"
-      />
-      <ShowReelWork
-        videoSrc={urTripShowreel}
-        topText="[AI / Development]"
-        title="UrTrip"
-        subtitle="Making travel planning more personal"
-        linkTo="/urtrip"
-      />
+      </LandingPage>
+
     </div>
   );
 }

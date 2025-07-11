@@ -39,7 +39,7 @@ function App() {
        {/* <CursorContextProvider> */}
         {/* <CustomCursor /> */}
           <div>
-          <Nav/>
+          {/* <Nav/> */}
 
           {/* Scroll to Top */}
           <ScrollToTop />
