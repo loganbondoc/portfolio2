@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Aurora from "./Aurora";
+import BoidFlock from "../utils/BoidFlock";
 
 export default function LandingPage({ children }) {
   const [isShrunk, setIsShrunk] = useState(false);
@@ -18,27 +19,21 @@ export default function LandingPage({ children }) {
   };
 
   return (
-    <div className="w-full min-h-screen overflow-x-hidden relative bg-black">
+    <div className="w-full min-h-screen overflow-x-hidden relative">
       <motion.div
         initial={{ width: "100vw", height: "100vh" }}
         animate={{
-          width: isShrunk ? "60vw" : "100vw",
-          height: isShrunk ? "60vh" : "100vh",
+          width: isShrunk ? "50vw" : "100vw",
+          height: isShrunk ? "28vw" : "100vh",
         }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        className={` mx-auto relative z-10 shadow-xl rounded-2xl overflow-hidden ${
-          isShrunk ? "mt-12 cursor-pointer" : "cursor-default"
-        }`}
+        className={` mx-auto relative z-10 overflow-hidden ${isShrunk ? "mt-12 cursor-pointer" : "cursor-default"
+          }`}
         onClick={handleExpand}
       >
         {/* Aurora BG fills the container */}
-        <div className="absolute inset-0 z-0">
-          <Aurora
-            colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
-            blend={0.5}
-            amplitude={1.0}
-            speed={0.5}
-          />
+        <div className="absolute inset-0 z-0 bg-black">
+          <BoidFlock />
         </div>
 
         {/* Name and title */}

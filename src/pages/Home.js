@@ -92,7 +92,7 @@ function Home() {
             videoSrc={mementoShowreel}
             topText="[UX Case Study]"
             title="Memento"
-            subtitle="Addressing Post Party Blues"
+            subtitle="Your Moments Forever"
             linkTo="/memento"
           />
           <ShowReelWork
