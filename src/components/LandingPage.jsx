@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Aurora from "./Aurora";
 import BoidFlock from "../utils/BoidFlock";
+import DecryptedText from "../utils/DecryptedText";
 
 export default function LandingPage({ children }) {
   const [isShrunk, setIsShrunk] = useState(false);
@@ -38,8 +39,31 @@ export default function LandingPage({ children }) {
 
         {/* Name and title */}
         <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
-          <h1 className="text-10xl font-bold smooch-sans">Logan Bondoc</h1>
-          <h2 className="text-2xl font-medium smooch-sans">Creative Technologist / UX Designer</h2>
+          {/* <DecryptedText
+            text="Logan Bondoc"
+            animateOn="view"
+            revealDirection="left"
+            className="text-8xl font-bold smooch-sans"
+            encryptedClassName="text-8xl font-bold smooch-sans text-gray-500"
+            speed={50}
+            maxIterations={50}
+            sequential={true}
+            parentClassName="block"
+          />
+
+          <DecryptedText
+            text="Creative Technologist / UX Designer"
+            animateOn="view"
+            revealDirection="left"
+            className="text-5xl font-medium smooch-sans"
+            encryptedClassName="text-5xl font-medium smooch-sans text-gray-500"
+            speed={50}
+            maxIterations={50}
+            sequential={true}
+            parentClassName="block"
+          /> */}
+          <h1 className="text-8xl font-bold smooch-sans">Logan Bondoc</h1>
+          <h2 className="text-4xl font-medium smooch-sans">Creative Technologist / UX Designer</h2>
         </div>
 
 
