@@ -96,9 +96,9 @@ import InfoItem from "../components/InfoItem";
 import EmblaCarousel from '../components/EmblaCarousel.jsx';
 
 function Memento() {
-    // useEffect(() => {
-    //     window.scrollTo(0, 0); // Scroll to the top of the screen when component mounts
-    // }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the screen when component mounts
+    }, []);
 
     const personaImages = [
         chris,

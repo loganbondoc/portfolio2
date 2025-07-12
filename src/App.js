@@ -15,8 +15,19 @@ import Resume from "./pages/Resume.js"
 import Footer from "./components/Footer.js"
 import PathwayCabinet from "./pages/PathwayCabinet.js"
 
-//Components
 
+// Icons
+import gitHubIcon from "./images/lb_logo 2.0.svg"
+
+//Components
+import Dock from "./components/Dock.jsx"
+
+const items = [
+  { icon: <gitHubIcon size={18} />, label: 'Home', onClick: () => alert('Home!') },
+  { icon: <gitHubIcon size={18} />, label: 'Archive', onClick: () => alert('Archive!') },
+  { icon: <gitHubIcon size={18} />, label: 'Profile', onClick: () => alert('Profile!') },
+  { icon: <gitHubIcon size={18} />, label: 'Settings', onClick: () => alert('Settings!') },
+];
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -36,27 +47,34 @@ function ScrollToTop() {
 function App() {
   return (
     <BrowserRouter>
-       {/* <CursorContextProvider> */}
-        {/* <CustomCursor /> */}
-          <div>
-          {/* <Nav/> */}
+      {/* <CursorContextProvider> */}
+      {/* <CustomCursor /> */}
+      <div>
+        {/* <Nav/> */}
+        {/* <Dock
+          items={items}
+          panelHeight={68}
+          baseItemSize={50}
+          magnification={70}
+        /> */}
 
-          {/* Scroll to Top */}
-          <ScrollToTop />
 
-          {/* Routes */}
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="/memento" element={<Memento />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/urtrip" element={<UrTrip />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/pathwaycabinet" element={<PathwayCabinet />} />
-          </Routes>
+        {/* Scroll to Top */}
+        <ScrollToTop />
 
-          {/* Footer */}
-          <Footer />
-        </div>
+        {/* Routes */}
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/memento" element={<Memento />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/urtrip" element={<UrTrip />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/pathwaycabinet" element={<PathwayCabinet />} />
+        </Routes>
+
+        {/* Footer */}
+        <Footer />
+      </div>
       {/* </CursorContextProvider> */}
 
     </BrowserRouter>

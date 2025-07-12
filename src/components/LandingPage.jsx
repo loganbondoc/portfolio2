@@ -37,10 +37,11 @@ export default function LandingPage({ children }) {
         </div>
 
         {/* Name and title */}
-        <div className="absolute top-10 left-10 z-10 text-white">
-          <h1 className="text-3xl font-bold">Logan Bondoc</h1>
-          <h2 className="text-2xl font-medium">Creative Technologist / UX Designer</h2>
+        <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
+          <h1 className="text-10xl font-bold smooch-sans">Logan Bondoc</h1>
+          <h2 className="text-2xl font-medium smooch-sans">Creative Technologist / UX Designer</h2>
         </div>
+
 
         {/* CTA only when not shrunk */}
         {!isShrunk && (

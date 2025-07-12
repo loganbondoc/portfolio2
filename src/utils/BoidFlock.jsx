@@ -75,8 +75,11 @@ export default function BoidFlock() {
     }
 
     render() {
-      this.p5.fill(239);
-      this.p5.stroke(135, 207, 251);
+      // this.p5.fill(239);
+      this.p5.fill(47, 65, 87);
+      // this.p5.noFill();
+      this.p5.stroke(76, 158, 237);
+      // this.p5.stroke(255, 255, 255);
       this.p5.strokeWeight(this.strokeWeight);
       this.p5.ellipse(this.position.x, this.position.y, this.r * 2);
     }
@@ -195,7 +198,7 @@ export default function BoidFlock() {
   };
 
   const draw = (p5) => {
-    p5.background(239);
+    p5.background(47, 65, 87);
     if (flockRef.current) {
       flockRef.current.run();
     }
