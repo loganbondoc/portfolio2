@@ -120,7 +120,8 @@ export default function BoidFlock() {
     }
 
     align(boids) {
-      const neighborDist = 50;
+      // const neighborDist = 50;
+      const neighborDist = this.r * 4;
       const sum = this.p5.createVector(0, 0);
       let count = 0;
 
@@ -146,7 +147,8 @@ export default function BoidFlock() {
     }
 
     cohesion(boids) {
-      const neighborDist = 50;
+      // const neighborDist = 50;
+      const neighborDist = this.r * 4;
       const sum = this.p5.createVector(0, 0);
       let count = 0;
 

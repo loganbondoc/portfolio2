@@ -21,6 +21,7 @@ import gitHubIcon from "./images/lb_logo 2.0.svg"
 
 //Components
 import Dock from "./components/Dock.jsx"
+import ClickSpark from './utils/ClickSpark';
 
 const items = [
   { icon: <gitHubIcon size={18} />, label: 'Home', onClick: () => alert('Home!') },
@@ -51,12 +52,21 @@ function App() {
       {/* <CustomCursor /> */}
       <div>
         {/* <Nav/> */}
-        {/* <Dock
+        <ClickSpark
+          sparkColor='#fff'
+          sparkSize={10}
+          sparkRadius={15}
+          sparkCount={8}
+          duration={400}
+        >
+          {/* Your content here */}
+        </ClickSpark>
+        <Dock
           items={items}
           panelHeight={68}
           baseItemSize={50}
           magnification={70}
-        /> */}
+        />
 
 
         {/* Scroll to Top */}
