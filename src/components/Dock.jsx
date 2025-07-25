@@ -1,3 +1,88 @@
+// "use client";
+
+// import Link from "next/link";
+// import React from "react";
+
+// import { ModeToggle } from "@/components/mode-toggle";
+// import { buttonVariants } from "@/components/ui/button";
+// import { Separator } from "@/components/ui/separator";
+// import {
+//   Tooltip,
+//   TooltipContent,
+//   TooltipProvider,
+//   TooltipTrigger,
+// } from "@/components/ui/tooltip";
+// import { cn } from "@/lib/utils";
+// import { Dock, DockIcon } from "@/components/magicui/dock";
+
+// // Replace these with your actual icons or use inline icons like below
+// const Works = (props) => (
+//   <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+//     <circle cx="12" cy="12" r="10" />
+//   </svg>
+// );
+// const Resume = (props) => (
+//   <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+//     <rect x="4" y="4" width="16" height="16" rx="2" />
+//   </svg>
+// );
+// const Contact = (props) => (
+//   <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+//     <path d="M2 4h20v16H2z" />
+//   </svg>
+// );
+
+// const DATA = {
+//   navbar: [
+//     { href: "/#CurrentWorks", icon: Works, label: "Works" },
+//     { href: "/resume", icon: Resume, label: "Resume" },
+//     { href: "mailto:loganbondoc@gmail.com", icon: Contact, label: "Contact" },
+//   ],
+// };
+
+// export function DockDemo() {
+//   return (
+//     <div className="fixed bottom-0 left-0 z-[9999] w-full flex items-end justify-center pointer-events-none">
+//       <TooltipProvider>
+//         <Dock className="pointer-events-auto bg-background/80 backdrop-blur border shadow-md">
+//           {DATA.navbar.map((item) => (
+//             <DockIcon key={item.label}>
+//               <Tooltip>
+//                 <TooltipTrigger asChild>
+//                   <Link
+//                     href={item.href}
+//                     aria-label={item.label}
+//                     className={cn(
+//                       buttonVariants({ variant: "ghost", size: "icon" }),
+//                       "size-12 rounded-full"
+//                     )}
+//                   >
+//                     <item.icon className="size-5" />
+//                   </Link>
+//                 </TooltipTrigger>
+//                 <TooltipContent>
+//                   <p>{item.label}</p>
+//                 </TooltipContent>
+//               </Tooltip>
+//             </DockIcon>
+//           ))}
+//           <Separator orientation="vertical" className="h-full py-2" />
+//           <DockIcon>
+//             <Tooltip>
+//               <TooltipTrigger asChild>
+//                 <ModeToggle className="rounded-full" />
+//               </TooltipTrigger>
+//               <TooltipContent>
+//                 <p>Theme</p>
+//               </TooltipContent>
+//             </Tooltip>
+//           </DockIcon>
+//         </Dock>
+//       </TooltipProvider>
+//     </div>
+//   );
+// }
+
 "use client";
 
 import {

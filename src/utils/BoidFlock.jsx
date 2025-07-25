@@ -20,10 +20,11 @@ export default function BoidFlock() {
       //   { radius: 12, strokeWeight: 5 },
       // ];
       const sizeOptions = [
-        { radius: 8, strokeWeight: 3 },
-        { radius: 12, strokeWeight: 4 },
+        { radius: 8, strokeWeight: 2 },
+        { radius: 12, strokeWeight: 1 },
         { radius: 16, strokeWeight: 3 },
-        { radius: 28, strokeWeight: 5 },
+        { radius: 16, strokeWeight: 4 },
+        { radius: 28, strokeWeight: 4 },
       ];
       const idx = Math.floor(Math.random() * sizeOptions.length);
       const selected = sizeOptions[idx];
